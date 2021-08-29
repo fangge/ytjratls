@@ -1,0 +1,82 @@
+.page7 {
+  height: 2050px;
+}
+.page7-tab-wrap {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  nav {
+    height: 775px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+      display: block;
+      &.selected {
+        animation: scaleFlash 1.2s linear infinite;
+      }
+      &.page7-tab1 {
+        @include imgUrl(92px, 85px, '/page7/tab1.png');
+        &.selected {
+          background-image: url(../assets/img/page7/tab1on.png);
+        }
+      }
+      &.page7-tab2 {
+        @include imgUrl(92px, 88px, '/page7/tab2.png');
+        &.selected {
+          background-image: url(../assets/img/page7/tab2on.png);
+        }
+      }
+      &.page7-tab3 {
+        @include imgUrl(92px, 86px, '/page7/tab3.png');
+        &.selected {
+          background-image: url(../assets/img/page7/tab3on.png);
+        }
+      }
+    }
+  }
+}
+.page7-tab-cont {
+  height: 1560px;
+  width: 520px;
+  position: relative;
+  margin-left: 20px;
+  .tab-cont {
+    display: none;
+    animation: slide1 0.5s linear;
+    &.selected {
+      display: block;
+    }
+  }
+  .l-img {
+    margin-bottom: -10px;
+  }
+  .tab-cont1 {
+    .l-img {
+      @include imgUrl(368px, 409px, '/page7/1.jpg');
+    }
+    .r-img {
+      @include imgUrl(589px, 1652px, '/page7/2.jpg');
+    }
+  }
+  .tab-cont2 {
+    .l-img {
+      @include imgUrl(368px, 409px, '/page7/4.jpg');
+    }
+    .r-img {
+      @include imgUrl(589px, 1652px, '/page7/5.jpg');
+    }
+  }
+  .tab-cont3 {
+    .l-img {
+      @include imgUrl(368px, 409px, '/page7/7.jpg');
+    }
+    .r-img {
+      @include imgUrl(589px, 1652px, '/page7/8.jpg');
+    }
+  }
+}

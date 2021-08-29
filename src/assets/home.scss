@@ -1,0 +1,228 @@
+@import './reset.scss';
+@import './animation.scss';
+body,
+html {
+  background: #f3f0e9;
+  position: relative;
+  width: 100%;
+}
+@mixin imgUrl($w, $h, $img) {
+  width: $w;
+  height: $h;
+  background: url('../assets/img/#{$img}') no-repeat center center / 100% 100%;
+}
+#cont-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  transform-origin: left top;
+  &.wrap2 {
+    transform: rotate(-90deg);
+  }
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.fadeOut {
+    display: none;
+  }
+  .process-wrap {
+    transform: rotate(90deg);
+    .percent {
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      line-height: 1;
+      margin-bottom: 36px;
+    }
+    .line {
+      width: 330px;
+      height: 5px;
+      background: #fff;
+    }
+    #line-on {
+      display: block;
+      width: 0px;
+      height: 5px;
+      background: #df4337;
+      transition: width 300ms linear;
+    }
+  }
+}
+.page0 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo {
+    width: 267px;
+    height: 550px;
+    overflow: hidden;
+    background: #000;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 80px;
+  }
+  .logo-overlay {
+    position: absolute;
+    @include imgUrl(100%, 100%, 'logo_bg.jpg');
+    z-index: 10;
+    top: 0;
+    left: 0;
+    animation: title 5s infinite linear;
+  }
+  .logo-title {
+    position: absolute;
+    @include imgUrl(100%, 100%, 'logo.png');
+    z-index: 11;
+    top: 0;
+    left: 0;
+  }
+  .page-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  p,
+  blockquote {
+    text-indent: -999em;
+  }
+
+  p {
+    animation: slide2 1.5s linear infinite;
+    position: relative;
+    .loading-icon {
+      position: absolute;
+      left: 0;
+      top: -70px;
+      &.hide {
+        display: none;
+      }
+    }
+    em {
+      display: block;
+      @include imgUrl(29px, 195px, 'title1.png');
+    }
+
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 12px 16px 12px;
+      border-color: transparent transparent #df4237 transparent;
+      margin-bottom: 8px;
+      opacity: 0;
+      &#load-ani1 {
+        animation: slide1 0.5s linear forwards;
+      }
+      &#load-ani2 {
+        animation: slide1 0.5s 0.5s linear forwards;
+      }
+      &#load-ani3 {
+        animation: slide1 0.5s 1s linear forwards;
+      }
+    }
+  }
+  blockquote {
+    animation: slide2 1.5s linear infinite;
+    @include imgUrl(19px, 368px, 'title2.png');
+  }
+}
+.xian {
+  width: 416px;
+  background-image: url(../assets/img/xian.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 416px 8947px;
+  position: absolute;
+  z-index: 9;
+  right: 532-260-40px;
+  top: 420px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.2s linear;
+}
+.page-wrap {
+  width: 100%;
+  position: relative;
+}
+.page {
+  width: 100%;
+  height: 1680px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 10;
+  position: relative;
+  .anibox {
+    display: none;
+  }
+  &.in {
+    .anibox {
+      display: block;
+    }
+  }
+  .page-bg {
+    background-position: center center;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 5;
+  }
+}
+.close {
+  @include imgUrl(64px, 64px, 'close.jpg');
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  .container2 {
+    position: absolute;
+    left: 9%;
+    top: 9%;
+    transform: translate(-50%, -50%);
+  }
+}
+@import './page1.scss';
+@import './page2.scss';
+@import './page3.scss';
+@import './page4.scss';
+@import './page5.scss';
+@import './page6.scss';
+@import './page7.scss';
+@import './page8.scss';
+@import './page9.scss';
+
+.audio {
+  .icon {
+    @include imgUrl(110px, 110px, 'audio.png');
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    &.play {
+      animation: audioAni 3s linear infinite;
+    }
+  }
+}

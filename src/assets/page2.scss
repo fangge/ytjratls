@@ -1,0 +1,28 @@
+.page2 {
+  height: 2120px;
+
+  .page-bg {
+    width: 530px;
+    height: 1064px;
+    background-image: url(../assets/img/page2/bg2.jpg);
+    bottom: 0;
+    right: 95px;
+    animation: slide1 0.5s 2s linear both;
+  }
+  .ani1 {
+    @include imgUrl(410px, 376px, '/page2/ani3.png');
+    position: absolute;
+    top: 430px;
+    right: 164px;
+    z-index: 7;
+    animation: flip 1s linear ;
+  }
+  .ani2 {
+    @include imgUrl(156px, 328px, '/page2/ani1.png');
+    position: absolute;
+    top: 980px;
+    right: 95px;
+    z-index: 7;
+    animation: bounceInDown 1s 1s linear both;
+  }
+}

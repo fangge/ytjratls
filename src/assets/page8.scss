@@ -1,0 +1,140 @@
+.page8 {
+  height: 1660px;
+
+  &.in {
+    .anibox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .title {
+    @include imgUrl(58px, 194px, '/page8/title.png');
+    margin-right: 50px;
+  }
+  .page-bg {
+    width: 309px;
+    height: 1626px;
+    background-image: url(../assets/img/page8/bg8.jpg);
+    position: relative;
+    animation: slide1 0.5s linear both;
+  }
+  .people {
+    @include imgUrl(170px, 950px, '/page8/people.png');
+    position: absolute;
+    left: 39px;
+    top: 237px;
+  }
+  ul {
+    li {
+      position: absolute;
+    }
+  }
+  .floor1 {
+    @include imgUrl(59px, 68px, '/page8/L1.png');
+    top: 571px;
+    left: 32px;
+    animation: rotateInDownLeft 0.5s 0.5s linear both;
+  }
+  .floor2 {
+    @include imgUrl(54px, 65px, '/page8/L2.png');
+    top: 815px;
+    left: 102px;
+    animation: rotateInDownLeft 0.5s 1.5s linear both;
+  }
+  .floor3 {
+    @include imgUrl(63px, 73px, '/page8/L3.png');
+    top: 1043px;
+    left: 169px;
+    animation: rotateInDownLeft 0.5s 2s linear both;
+  }
+  .floor4 {
+    @include imgUrl(56px, 71px, '/page8/L4.png');
+    top: 1218px;
+    left: 214px;
+    animation: rotateInDownLeft 0.5s 2.5s linear both;
+  }
+}
+.bg8-intro {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  animation: slide1 0.5s linear;
+  z-index: 99;
+  background: #f3f0e9;
+  animation: slide1 0.5s linear;
+  z-index: 99;
+  &.show {
+    display: flex;
+  }
+  nav {
+    position: absolute;
+    z-index: 11;
+    left: 50%;
+    top: 50%;
+    transform: translate(-397%, -286%);
+
+    a {
+      display: block;
+      width: 67px;
+      height: 67px;
+      margin: 5px 0;
+      &.tab1 {
+        background: url(../assets/img/page8/tab1.png) no-repeat center center /
+          100% 100%;
+        &.selected {
+          background: url(../assets/img/page8/tab1on.png) no-repeat center
+            center / 100% 100%;
+        }
+      }
+      &.tab2 {
+        background: url(../assets/img/page8/tab2.png) no-repeat center center /
+          100% 100%;
+        &.selected {
+          background: url(../assets/img/page8/tab2on.png) no-repeat center
+            center / 100% 100%;
+        }
+      }
+      &.tab3 {
+        background: url(../assets/img/page8/tab3.png) no-repeat center center /
+          100% 100%;
+        &.selected {
+          background: url(../assets/img/page8/tab3on.png) no-repeat center
+            center / 100% 100%;
+        }
+      }
+    }
+  }
+  .intro {
+    display: none;
+    width: 667px;
+    height: 1381px;
+    height: 95vh;
+    width: calc(95vh * 750 / 1679);
+    position: relative;
+    z-index: 10;
+    .close {
+      left: 10px;
+    }
+    &.show {
+      display: block;
+    }
+  }
+  .intro1 {
+    background: url(../assets/img/page8/l1.jpg) no-repeat center center / 100%
+      100%;
+  }
+  .intro2 {
+    background: url(../assets/img/page8/l2.jpg) no-repeat center center / 100%
+      100%;
+  }
+  .intro3 {
+    background: url(../assets/img/page8/l3.jpg) no-repeat center center / 100%
+      100%;
+  }
+}

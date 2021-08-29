@@ -1,0 +1,52 @@
+.page1 {
+  height: 1500px;
+  .page-bg {
+    width: 477px;
+    height: 1191px;
+    background-image: url(../assets/img/page1/bg1.jpg);
+    top: 211px;
+    right: 42px;
+  }
+  .ani1 {
+    @include imgUrl(260px, 464px, '/page1/ani1.png');
+    position: absolute;
+    top: 180px;
+    left: 116px;
+    z-index: 7;
+  }
+  .ani2 {
+    @include imgUrl(230px, 231px, '/page1/ani2.png');
+    position: absolute;
+    top: 579px;
+    left: 198px;
+    z-index: 6;
+    &.in {
+      animation: pageAni1 1s linear forwards;
+    }
+  }
+  .title1 {
+    @include imgUrl(41px, 300px, '/page1/title1.png');
+    position: absolute;
+    bottom: 200px;
+    right: 507px;
+    z-index: 7;
+    animation: slide2 1.5s linear infinite;
+  }
+  .title2 {
+    @include imgUrl(40px, 298px, '/page1/title2.png');
+    position: absolute;
+    bottom: 200px;
+    right: 568px;
+    z-index: 7;
+    opacity: 0;
+    &.in {
+      animation: slide1 0.5s 1.5s linear forwards;
+    }
+
+    span {
+      display: block;
+      height: 50%;
+      width: 100%;
+    }
+  }
+}

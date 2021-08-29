@@ -1,0 +1,162 @@
+.page4 {
+  height: 2020px;
+
+  .ani1 {
+    @include imgUrl(223px, 160px, '/page4/ani1.png');
+    position: absolute;
+    right: 226px;
+    top: 10px;
+    animation: slide1 0.5s 0.5s linear both;
+  }
+  .car {
+    @include imgUrl(169+80px, 322+80px, '/page4/car.png');
+    position: absolute;
+    right: 250px;
+    top: 280px;
+    animation: slide1 0.5s 1s linear both;
+  }
+  .map {
+    @include imgUrl(329px, 235px, '/page4/map.png');
+    position: absolute;
+    right: 242px;
+    top: 870px;
+    animation: slide1 0.5s 1.5s linear both;
+    .star {
+      @include imgUrl(60px, 142px, '/page4/star.png');
+      position: absolute;
+      top: 20px;
+      left: 44px;
+      animation: scaleFlash 1.2s linear infinite;
+    }
+  }
+  .title {
+    @include imgUrl(148px, 630px, '/page4/title.png');
+    position: absolute;
+    top: 251px;
+    right: 83px;
+    animation: slide1 0.5s linear both;
+  }
+  .title2 {
+    @include imgUrl(39px, 364px, '/page4/title2.png');
+    position: absolute;
+    top: 50px;
+    left: 94px;
+    .container2 {
+      position: absolute;
+      left: -8px;
+      top: -8px;
+    }
+  }
+  .page4-tab-cont {
+    height: 640+200px;
+    width: 382+200px;
+    position: relative;
+    margin-left: 20px;
+    .tab-cont1,
+    .tab-cont2,
+    .tab-cont3 {
+      position: absolute;
+      display: none;
+      animation: slide1 0.5s linear;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      &.selected {
+        display: block;
+      }
+    }
+    .loc {
+      @include imgUrl(200px, 73px, '/page4/loc.png');
+      position: absolute;
+    }
+    .tab-cont1 {
+      @include imgUrl(382+200px, 534+200px, '/page4/tab1cont.png');
+      .loc {
+        top: 2.2rem;
+        left: 1rem;
+        animation: scaleFlash 1.2s linear infinite;
+      }
+    }
+    .tab-cont2 {
+      @include imgUrl(366+200px, 640+200px, '/page4/tab2cont.png');
+      transform: translate(-45%, -47%);
+      .loc {
+        top: 2.45rem;
+        left: 0.4rem;
+        animation: scaleFlash 1.2s linear infinite;
+      }
+    }
+    .tab-cont3 {
+      @include imgUrl(363+200px, 584+200px, '/page4/tab3cont.png');
+      .loc {
+        top: 2.4rem;
+        left: 0.8rem;
+        animation: scaleFlash 1.2s linear infinite;
+      }
+    }
+  }
+  .page4-tab {
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    nav {
+      height: 775px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      a {
+        display: block;
+        &.selected {
+          animation: scaleFlash 1.2s linear infinite;
+        }
+        &.page4-tab1 {
+          @include imgUrl(69px, 86px, '/page4/tab1.png');
+          &.selected {
+            background-image: url(../assets/img/page4/tab1on.png);
+          }
+        }
+        &.page4-tab2 {
+          @include imgUrl(69px, 88px, '/page4/tab2.png');
+          &.selected {
+            background-image: url(../assets/img/page4/tab2on.png);
+          }
+        }
+        &.page4-tab3 {
+          @include imgUrl(69px, 87px, '/page4/tab3.png');
+          &.selected {
+            background-image: url(../assets/img/page4/tab3on.png);
+          }
+        }
+      }
+    }
+  }
+}
+.bg4-intro {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  animation: slide1 0.5s linear;
+  z-index: 99;
+  background: #f3f0e9;
+  .cont {
+    @include imgUrl(750px, 1679px, '/page4/bg4intro.jpg');
+    height: 100vh;
+    width: calc(100vh * 750 / 1679);
+  }
+
+  display: none;
+  animation: slide1 0.5s linear;
+  z-index: 99;
+  &.show {
+    display: flex;
+  }
+}

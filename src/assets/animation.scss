@@ -1,0 +1,355 @@
+@keyframes title {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(0.88);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+@keyframes slide1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scaleFlash {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+/** 圆点扩散 **/
+@keyframes warn {
+  0% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes warn1 {
+  0% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    opacity: 0.3;
+  }
+
+  75% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+}
+@keyframes mymovetop {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(10px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  75% {
+    transform: translate(10px);
+  }
+}
+/* 保持大小不变的小圆点 */
+.dot2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 14px;
+  top: 14px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #fff; /* 实心圆 ，如果没有这个就是一个小圆圈 */
+  z-index: 2;
+}
+/* 产生动画（向外扩散变大）的圆圈 第一个圆 */
+.pulse2 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 0;
+  top: 0;
+  border: 5px solid #000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: warn 2s ease-out;
+  -moz-animation: warn 2s ease-out;
+  animation: warn 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* 产生动画（向外扩散变大）的圆圈 第二个圆 */
+.pulse12 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 0;
+  top: 0;
+  border: 5px solid #000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: warn1 2s ease-out;
+  -moz-animation: warn1 2s ease-out;
+  animation: warn1 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.container {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -10px;
+  top: 30px;
+}
+/* 保持大小不变的小圆点 */
+.dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 14px;
+  top: 14px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #fff; /* 实心圆 ，如果没有这个就是一个小圆圈 */
+  z-index: 2;
+}
+/* 产生动画（向外扩散变大）的圆圈 第一个圆 */
+.pulse {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: 0;
+  border: 1px solid #3399ff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: warn 2s ease-out;
+  -moz-animation: warn 2s ease-out;
+  animation: warn 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* 产生动画（向外扩散变大）的圆圈 第二个圆 */
+.pulse1 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: 0;
+  border: 1px solid #3399ff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: warn1 2s ease-out;
+  -moz-animation: warn1 2s ease-out;
+  animation: warn1 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes audioAni {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// page1
+@keyframes pageAni1 {
+  0% {
+    top: 579px;
+  }
+  100% {
+    top: 650px;
+  }
+}
+
+@keyframes flip {
+  0% {
+    -webkit-transform: perspective(400px) translateZ(0) rotateX(0) scale(1);
+    -ms-transform: perspective(400px) translateZ(0) rotateX(0) scale(1);
+    transform: perspective(400px) translateZ(0) rotateX(0) scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  40% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateX(170deg)
+      scale(1);
+    -ms-transform: perspective(400px) translateZ(150px) rotateX(170deg) scale(1);
+    transform: perspective(400px) translateZ(150px) rotateX(170deg) scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateX(190deg)
+      scale(1);
+    -ms-transform: perspective(400px) translateZ(150px) rotateX(190deg) scale(1);
+    transform: perspective(400px) translateZ(150px) rotateX(190deg) scale(1);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    -webkit-transform: perspective(400px) translateZ(0) rotateX(360deg)
+      scale(0.95);
+    -ms-transform: perspective(400px) translateZ(0) rotateX(360deg) scale(0.95);
+    transform: perspective(400px) translateZ(0) rotateX(360deg) scale(0.95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: perspective(400px) translateZ(0) rotateX(360deg) scale(1);
+    -ms-transform: perspective(400px) translateZ(0) rotateX(360deg) scale(1);
+    transform: perspective(400px) translateZ(0) rotateX(360deg) scale(1);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes pageAni3 {
+  0% {
+    top: 1057px;
+  }
+  100% {
+    top: 1357px;
+  }
+}
+@keyframes pageAni3_2 {
+  0% {
+    top: 1222px;
+  }
+  100% {
+    top: 1422px;
+  }
+}
+@keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
