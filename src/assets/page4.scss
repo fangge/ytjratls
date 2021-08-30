@@ -65,6 +65,11 @@
       @include imgUrl(200px, 73px, '/page4/loc.png');
       position: absolute;
     }
+    .logo{
+      position: absolute;
+      left:239px;
+      top:359px;
+    }
     .dot-title{
       position: absolute;
     }
@@ -138,14 +143,94 @@
         left: 58px;
         animation: scaleFlash 1.2s linear infinite;
       }
+      .logo{
+        @include imgUrl(65px,232px,'/page4/tab1/tab1logo.png');
+
+      }
     }
     .tab-cont2 {
       // @include imgUrl(366+200px, 640+200px, '/page4/tab2cont.png');
-      transform: translate(-45%, -47%);
+      transform: translate(1%, 0%);
+      .dot1 {
+        top: 78px;
+        left: 191px;
+      }
+      .dot2 {
+        top: 235px;
+        left: 272px;
+      }
+      .dot3 {
+        top: 433px;
+        left: 308px;
+      }
+      .dot4 {
+        top: 505px;
+        left: 209px;
+      }
+      .dot5 {
+        top: 635px;
+        left: 295px;
+      }
+      .dot6 {
+        top: 682px;
+        left: 192px;
+      }
+      .dot7 {
+        top: 815px;
+        left: 256px;
+      }
+      .dot8{
+       top:892px;
+        left: 153px;
+      }
+      .dot-title1{
+        @include imgUrl(179px,56px,'/page4/tab2/title (6).png');
+        top:63px;
+        left:246px;
+      }
+      .dot-title2{
+        @include imgUrl(206px,55px,'/page4/tab2/title (9).png');
+        top:220px;
+        left:307px;
+      }
+      .dot-title3{
+        @include imgUrl(182px,55px,'/page4/tab2/title (1).png');
+        top:419px;
+        left:352px;
+      }
+      .dot-title4{
+        @include imgUrl(128px,25px,'/page4/tab2/title (4).png');
+        top:507px;
+        left:62px;
+      }
+      .dot-title5{
+        @include imgUrl(152px,56px,'/page4/tab2/title (5).png');
+        bottom:620px;
+        left:336px;
+      }
+      .dot-title6{
+        @include imgUrl(99px,56px,'/page4/tab2/title (8).png');
+        top:667px;
+        left:71px; 
+      }
+      .dot-title7{
+        @include imgUrl(204px,56px,'/page4/tab2/title (3).png');
+        top:803px;
+        left:306px; 
+      }
+      .dot-title8{
+        @include imgUrl(100px,25px,'/page4/tab2/title (2).png');
+        top:890px;
+        left:40px; 
+      }
       .loc {
-        top: 2.45rem;
-        left: 0.4rem;
+        top: 278px;
+        left: 55px;
         animation: scaleFlash 1.2s linear infinite;
+      }
+      .logo{
+        @include imgUrl(65px,232px,'/page4/tab2/tab2logo.png');
+
       }
     }
     .tab-cont3 {
