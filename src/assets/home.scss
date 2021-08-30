@@ -1,5 +1,6 @@
 @import './reset.scss';
 @import './animation.scss';
+@import './aos.scss';
 body,
 html {
   background: #f3f0e9;
@@ -11,20 +12,7 @@ html {
   height: $h;
   background: url('../assets/img/#{$img}') no-repeat center center / 100% 100%;
 }
-#cont-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  transform-origin: left top;
-  &.wrap2 {
-    transform: rotate(-90deg);
-  }
-}
+
 .loading {
   width: 100%;
   height: 100%;
@@ -153,18 +141,18 @@ html {
   }
 }
 .xian {
-  width: 416px;
+  width: 333px;
   background-image: url(../assets/img/xian.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 416px 8947px;
+  background-size: 333px 9974px;
   position: absolute;
   z-index: 9;
-  right: 532-260-40px;
-  top: 420px;
+  top: 441px;
+  left:15.0666667%;
   overflow: hidden;
   height: 0;
-  transition: height 0.2s linear;
+  transition: height 0.1s linear;
 }
 .page-wrap {
   width: 100%;
@@ -177,14 +165,14 @@ html {
   box-sizing: border-box;
   z-index: 10;
   position: relative;
-  .anibox {
-    display: none;
-  }
-  &.in {
-    .anibox {
-      display: block;
-    }
-  }
+  // .anibox {
+  //   display: none;
+  // }
+  // &.in {
+  //   .anibox {
+  //     display: block;
+  //   }
+  // }
   .page-bg {
     background-position: center center;
     background-size: 100% 100%;
@@ -208,11 +196,11 @@ html {
 @import './page2.scss';
 @import './page3.scss';
 @import './page4.scss';
-@import './page5.scss';
-@import './page6.scss';
-@import './page7.scss';
-@import './page8.scss';
-@import './page9.scss';
+// @import './page5.scss';
+// @import './page6.scss';
+// @import './page7.scss';
+// @import './page8.scss';
+// @import './page9.scss';
 
 .audio {
   .icon {
