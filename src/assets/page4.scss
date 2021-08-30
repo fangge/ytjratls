@@ -154,74 +154,90 @@
       .dot1 {
         top: 78px;
         left: 191px;
+        animation: zoomIn.4s linear both;
       }
       .dot2 {
         top: 235px;
         left: 272px;
+        animation: zoomIn .4s .2s linear both;
       }
       .dot3 {
         top: 433px;
         left: 308px;
+        animation: zoomIn .4s .4s linear both;
       }
       .dot4 {
         top: 505px;
         left: 209px;
+        animation: zoomIn .4s .6s linear both;
       }
       .dot5 {
         top: 635px;
         left: 295px;
+        animation: zoomIn .4s .8s linear both;
       }
       .dot6 {
         top: 682px;
         left: 192px;
+        animation: zoomIn .4s 1s linear both;
       }
       .dot7 {
         top: 815px;
         left: 256px;
+        animation: zoomIn .4s 1.2s linear both;
       }
       .dot8{
        top:892px;
         left: 153px;
+        animation: zoomIn .4s 1.4s linear both;
       }
       .dot-title1{
         @include imgUrl(179px,56px,'/page4/tab2/title (6).png');
         top:63px;
         left:246px;
+        animation: zoomIn .4s linear both;
       }
       .dot-title2{
         @include imgUrl(206px,55px,'/page4/tab2/title (9).png');
         top:220px;
         left:307px;
+        animation: zoomIn .4s .2s linear both;
       }
       .dot-title3{
         @include imgUrl(182px,55px,'/page4/tab2/title (1).png');
         top:419px;
         left:352px;
+        animation: zoomIn .4s .4s linear both;
       }
       .dot-title4{
         @include imgUrl(128px,25px,'/page4/tab2/title (4).png');
         top:507px;
         left:62px;
+        animation: zoomIn .4s .6s linear both;
       }
       .dot-title5{
         @include imgUrl(152px,56px,'/page4/tab2/title (5).png');
         bottom:620px;
         left:336px;
+        animation: zoomIn .4s .8s linear both;
       }
       .dot-title6{
         @include imgUrl(99px,56px,'/page4/tab2/title (8).png');
         top:667px;
         left:71px; 
+        animation: zoomIn .4s 1s linear both;
       }
       .dot-title7{
         @include imgUrl(204px,56px,'/page4/tab2/title (3).png');
         top:803px;
         left:306px; 
+        animation: zoomIn .4s 1.2s linear both;
       }
       .dot-title8{
         @include imgUrl(100px,25px,'/page4/tab2/title (2).png');
         top:890px;
         left:40px; 
+        animation: zoomIn .4s 1.4s linear both;
       }
       .loc {
         top: 278px;
