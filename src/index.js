@@ -187,14 +187,13 @@ $(function () {
           .addClass('show');
       });
 
-      $('.audio .icon').on('click', function () {
-        if ($(this).hasClass('play')) {
-          $(this).removeClass('play');
-          document.getElementById('music').pause();
-        } else {
-          $(this).addClass('play');
-          document.getElementById('music').play();
-        }
+      $('.audio').on('click', '.play', function () {
+        $('.audio .icon').removeClass('play').addClass('stop');
+        document.getElementById('music').pause();
+      });
+      $('.audio').on('click', '.stop', function () {
+        $('.audio .icon').removeClass('stop').addClass('play');
+        document.getElementById('music').play();
       });
 
       $('.page1 .btn1').on('click', function () {
@@ -318,11 +317,9 @@ $(function () {
             }, 1500);
           }
           this.btnEvt();
-          document.getElementById('music').play();
         }
       );
       this.scrollPage();
-      document.getElementById('music').play();
       $('.page0,.page1 .page-bg,.page1 .ani1').on('click', function () {
         document.getElementById('music').play();
       });

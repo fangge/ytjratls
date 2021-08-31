@@ -14,6 +14,7 @@
     background-image: url(../assets/img/page8/bg8.jpg);
     position: relative;
     animation: slide1 0.5s linear both;
+    margin-top:-20px;
   }
   .people {
     @include imgUrl(170px, 950px, '/page8/people.png');
@@ -34,13 +35,13 @@
   }
   .floor2 {
     @include imgUrl(80px, 97px, '/page8/L2.png');
-    top: 815px;
+    top: 815+100px;
     left: 102px;
 
   }
   .floor3 {
     @include imgUrl(92px, 107px, '/page8/L3.png');
-    top: 1043px;
+    top: 1043+200px;
     left: 169px;
 
   }

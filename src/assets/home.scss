@@ -216,7 +216,7 @@ body {
     position: fixed;
     right: 20px;
     bottom: 150px;
-    z-index: 100;
+    z-index: 999;
     &.play {
       animation: audioAni 3s linear infinite;
     }
