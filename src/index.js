@@ -195,11 +195,29 @@ $(function () {
       });
 
       $('.page1 .btn1').on('click', function () {
-        $('#cont-wrap').stop().animate({ scrollTop: _this.page6Top }, 200);
+        _this.scrollTop(_this.page6Top, 500);
       });
       $('.page1 .btn2').on('click', function () {
-        $('#cont-wrap').stop().animate({ scrollTop: _this.page7Top }, 200);
+        _this.scrollTop(_this.page7Top, 500);
       });
+    },
+    scrollTop(number = 0, time) {
+      if (!time) {
+        document.body.scrollTop = document.documentElement.scrollTop = number;
+        return number;
+      }
+      const spacingTime = 20; // 设置循环的间隔时间  值越小消耗性能越高
+      let spacingInex = time / spacingTime; // 计算循环的次数
+      let nowTop = document.body.scrollTop + document.documentElement.scrollTop; // 获取当前滚动条位置
+      let everTop = (number - nowTop) / spacingInex; // 计算每次滑动的距离
+      let scrollTimer = setInterval(() => {
+        if (spacingInex > 0) {
+          spacingInex--;
+          this.scrollTop((nowTop += everTop));
+        } else {
+          clearInterval(scrollTimer); // 清除计时器
+        }
+      }, spacingTime);
     },
     scrollPage() {
       const _this = this;
@@ -214,7 +232,7 @@ $(function () {
           }
           return;
         } else {
-          if (sTop < 5870) _this.$xian.css('height', sTop - 255 + 'px');
+          if (sTop < 5870) _this.$xian.css('height', sTop - 245 + 'px');
         }
         // else {
         //   _this.$xian.css('height', $(this).scrollTop() - 200 + 'px');
@@ -280,9 +298,10 @@ $(function () {
               $('#line-on').css('width', '100%');
             }, 5000);
             setTimeout(function () {
-              $('#loading').fadeOut(200);
-              // }, 5500);
-            }, 100);
+              $('#loading').hide();
+              $('body').removeClass('fadeOut');
+            }, 5500);
+            // }, 100);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {
@@ -297,9 +316,9 @@ $(function () {
       );
       this.scrollPage();
 
-      // $('#loading').on('click', function () {
-      //   document.getElementById('music').play();
-      // });
+      $('.page0').on('click', function () {
+        document.getElementById('music').play();
+      });
     },
   };
   actFun.init();
