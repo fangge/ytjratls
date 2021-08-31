@@ -30,6 +30,7 @@ import img27 from './assets/img/page1/bg1.jpg';
 
 import '@assets/home.scss';
 
+
 AOS.init({
   offset: -50,
 });
@@ -223,9 +224,9 @@ $(function () {
       const _this = this;
       $(document).on('scroll', function () {
         const sTop = $(this).scrollTop();
-        // console.log('sTop: ', sTop);
+        console.log('sTop: ', sTop);
         if (sTop <= 800) {
-          if (sTop >= 500) {
+          if (sTop >= 300) {
             _this.$xian.css({ height: '13.33333rem' });
             // $('.page1 .ani2').addClass('in');
             // $('.page1 .title2').addClass('in');

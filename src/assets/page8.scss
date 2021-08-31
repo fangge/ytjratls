@@ -44,12 +44,12 @@
     left: 169px;
 
   }
-  .floor4 {
-    @include imgUrl(83px, 107px, '/page8/L4.png');
-    top: 1218px;
-    left: 214px;
+  // .floor4 {
+  //   @include imgUrl(83px, 107px, '/page8/L4.png');
+  //   top: 1218px;
+  //   left: 214px;
 
-  }
+  // }
 }
 .bg8-intro {
   align-items: center;

@@ -216,7 +216,7 @@
       }
       .dot-title5 {
         @include imgUrl(152px, 56px, '/page4/tab2/title(5).png');
-        bottom: 620px;
+        top: 620px;
         left: 336px;
         animation: zoomIn 0.4s 0.8s linear both;
       }
