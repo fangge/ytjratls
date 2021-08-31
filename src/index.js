@@ -318,11 +318,12 @@ $(function () {
             }, 1500);
           }
           this.btnEvt();
+          document.getElementById('music').play();
         }
       );
       this.scrollPage();
-
-      $('.page0').on('click', function () {
+      document.getElementById('music').play();
+      $('.page0,.page1 .page-bg,.page1 .ani1').on('click', function () {
         document.getElementById('music').play();
       });
     },
