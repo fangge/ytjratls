@@ -3,30 +3,41 @@
   height: auto;
   h2 {
     text-indent: -999em;
-    @include imgUrl(450px, 218px, '/page9/title.png');
+    @include imgUrl(376px, 177px, '/page9/title.png');
     margin: 0 auto 20px;
   }
   input {
     display: block;
-    width: 657px;
-    height: 94px;
+    width: 505px;
+    height: 73px;
     border-radius: 10px;
-    border: 5px solid #adaaa4;
+    border: solid 3px #adaaa3;
     box-sizing: border-box;
     padding: 0 10px;
     color: #000;
     font-size: 30px;
     margin: 0 auto 20px;
+
     &:focus {
       outline: 0;
     }
     &::placeholder {
-      color: #c0beb9;
+      color: #bfbdb8;
     }
   }
 }
 .submit-btn {
-  display: block;
-  @include imgUrl(657px, 84px, '/page9/btn.png');
+  display: flex;
+  width: 501px;
+  height: 65px;
+  background-color: #d2d4c7;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  i {
+    display: block;
+    @include imgUrl(402px, 39px, '/page9/btn.png');
+  }
+
   margin: 0 auto 50px;
 }

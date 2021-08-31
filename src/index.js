@@ -31,11 +31,10 @@ import img27 from './assets/img/page1/bg1.jpg';
 import '@assets/home.scss';
 
 AOS.init({
-  offset: -50
+  offset: -50,
 });
 
 $(function () {
-
   // window.addEventListener(
   //   'orientationchange',
   //   function (event) {
@@ -214,8 +213,8 @@ $(function () {
             // $('.page1 .title2').addClass('in');
           }
           return;
-        }else{
-          _this.$xian.css('height', $(this).scrollTop() - 200 + 'px');
+        } else {
+          if (sTop < 5870) _this.$xian.css('height', sTop - 255 + 'px');
         }
         // else {
         //   _this.$xian.css('height', $(this).scrollTop() - 200 + 'px');

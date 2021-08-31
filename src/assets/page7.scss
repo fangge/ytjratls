@@ -1,10 +1,16 @@
 .page7 {
-  height: 2050px;
+  height: 1400px;
+  .title {
+    @include imgUrl(98px, 209px, '/page7/title.png');
+    position: absolute;
+    left: 76.53333%;
+    top: 50px;
+  }
 }
 .page7-tab-wrap {
   position: absolute;
-  top: 0;
-  left: 45px;
+  top: 50px;
+  left: 4.66667%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -20,19 +26,19 @@
         animation: scaleFlash 1.2s linear infinite;
       }
       &.page7-tab1 {
-        @include imgUrl(92px, 85px, '/page7/tab1.png');
+        @include imgUrl(96px, 98px, '/page7/tab1.png');
         &.selected {
           background-image: url(../assets/img/page7/tab1on.png);
         }
       }
       &.page7-tab2 {
-        @include imgUrl(92px, 88px, '/page7/tab2.png');
+        @include imgUrl(98px, 99px, '/page7/tab2.png');
         &.selected {
           background-image: url(../assets/img/page7/tab2on.png);
         }
       }
       &.page7-tab3 {
-        @include imgUrl(92px, 86px, '/page7/tab3.png');
+        @include imgUrl(104px, 98px, '/page7/tab3.png');
         &.selected {
           background-image: url(../assets/img/page7/tab3on.png);
         }
@@ -53,30 +59,35 @@
     }
   }
   .l-img {
-    margin-bottom: -10px;
+    margin-bottom: 10px;
   }
   .tab-cont1 {
     .l-img {
-      @include imgUrl(368px, 409px, '/page7/1.jpg');
+      @include imgUrl(251px, 278px, '/page7/1.jpg');
     }
     .r-img {
-      @include imgUrl(589px, 1652px, '/page7/2.jpg');
+      @include imgUrl(373px, 1036px, '/page7/2.jpg');
+      animation: slide1 0.2s 0.5s linear both;
     }
   }
   .tab-cont2 {
     .l-img {
-      @include imgUrl(368px, 409px, '/page7/4.jpg');
+      @include imgUrl(251px, 278px, '/page7/4.jpg');
+      animation: flipInX 1s linear both;
     }
     .r-img {
-      @include imgUrl(589px, 1652px, '/page7/5.jpg');
+      @include imgUrl(320px, 1046px, '/page7/5.jpg');
+      animation: slide1 0.2s 0.5s linear both;
     }
   }
   .tab-cont3 {
     .l-img {
-      @include imgUrl(368px, 409px, '/page7/7.jpg');
+      @include imgUrl(251px, 278px, '/page7/7.jpg');
+      animation: flipInX 1s linear both;
     }
     .r-img {
-      @include imgUrl(589px, 1652px, '/page7/8.jpg');
+      @include imgUrl(365px, 1046px, '/page7/8.jpg');
+      animation: slide1 0.2s 0.5s linear both;
     }
   }
 }

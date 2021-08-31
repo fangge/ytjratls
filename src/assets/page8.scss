@@ -1,20 +1,17 @@
 .page8 {
-  height: 1660px;
-
-  &.in {
-    .anibox {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  height: 2310px;
+  .anibox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .title {
-    @include imgUrl(58px, 194px, '/page8/title.png');
+    @include imgUrl(77px, 255px, '/page8/title.png');
     margin-right: 50px;
   }
   .page-bg {
-    width: 309px;
-    height: 1626px;
+    width: 409px;
+    height: 2301px;
     background-image: url(../assets/img/page8/bg8.jpg);
     position: relative;
     animation: slide1 0.5s linear both;
@@ -31,28 +28,28 @@
     }
   }
   .floor1 {
-    @include imgUrl(59px, 68px, '/page8/L1.png');
+    @include imgUrl(87px, 102px, '/page8/L1.png');
     top: 571px;
     left: 32px;
-    animation: rotateInDownLeft 0.5s 0.5s linear both;
+
   }
   .floor2 {
-    @include imgUrl(54px, 65px, '/page8/L2.png');
+    @include imgUrl(80px, 97px, '/page8/L2.png');
     top: 815px;
     left: 102px;
-    animation: rotateInDownLeft 0.5s 1.5s linear both;
+
   }
   .floor3 {
-    @include imgUrl(63px, 73px, '/page8/L3.png');
+    @include imgUrl(92px, 107px, '/page8/L3.png');
     top: 1043px;
     left: 169px;
-    animation: rotateInDownLeft 0.5s 2s linear both;
+
   }
   .floor4 {
-    @include imgUrl(56px, 71px, '/page8/L4.png');
+    @include imgUrl(83px, 107px, '/page8/L4.png');
     top: 1218px;
     left: 214px;
-    animation: rotateInDownLeft 0.5s 2.5s linear both;
+
   }
 }
 .bg8-intro {
@@ -64,10 +61,8 @@
   top: 0;
   left: 0;
   display: none;
-  animation: slide1 0.5s linear;
   z-index: 99;
   background: #f3f0e9;
-  animation: slide1 0.5s linear;
   z-index: 99;
   &.show {
     display: flex;
@@ -81,8 +76,8 @@
 
     a {
       display: block;
-      width: 67px;
-      height: 67px;
+      width: 68px;
+      height: 68px;
       margin: 5px 0;
       &.tab1 {
         background: url(../assets/img/page8/tab1.png) no-repeat center center /

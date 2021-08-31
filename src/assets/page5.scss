@@ -1,50 +1,51 @@
 .page5 {
-  height: 3300px;
+  height: 2900px;
 
   .page-bg {
-    width: 236 * 1.7px;
-    height: 1680 * 1.7px;
+    width: 400px;
+    height: 2875px;
     background-image: url(../assets/img/page5/ani1.png);
-    top: 0;
-    left: 260px;
-    transform: translate(-5%, 10%);
+    left: 28.93333%;
+    top: -50px;
     z-index: 9;
-    animation: slide1 0.5s linear both;
   }
   .ani2 {
-    @include imgUrl(369 * 1.7px, 692 * 1.7px, '/page5/ani2.png');
+    @include imgUrl(657px, 1267px, '/page5/ani2.png');
     position: absolute;
-    transform: translate(13%, 135%);
-    animation: slide1 0.5s 0.5s linear both;
+    bottom: 300px;
+    left: 4%;
   }
   .ani3 {
-    @include imgUrl(124 * 1.7px, 872 * 1.7px, '/page5/ani3.png');
+    @include imgUrl(219px, 1540px, '/page5/ani3.png');
     position: absolute;
-    transform: translate(69%, 85%);
-    animation: slide1 0.5s 1.5s linear both;
+    left: 12.8%;
+    bottom: 350px;
   }
   .logo {
-    @include imgUrl(70 * 1.5px, 317 * 1.5px, '/page5/logo.png');
+    @include imgUrl(116px, 523px, '/page5/logo.png');
     position: absolute;
-    right: 129px;
-    top: 450px;
-    animation: slide1 0.5s 2s linear both;
+    top: 107px;
+    left: 66.66667%;
   }
   .title1 {
-    @include imgUrl(50px, 359px, '/page5/title1.png');
+    @include imgUrl(64px, 400px, '/page5/title1.png');
     position: absolute;
-    left: 150px;
-    top: 339px;
+    left: 8%;
+    top: 565px;
     z-index: 99;
-    animation: slide1 0.5s 2.5s linear both;
+    .container2 {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
   }
   .title2 {
-    @include imgUrl(140px, 470px, '/page5/title2.png');
+    @include imgUrl(144px, 490px, '/page5/title2.png');
     position: absolute;
-    right: 49px;
-    bottom: 59px;
+    left: 69.73333%;
+    bottom: 0;
     z-index: 99;
-    animation: slide1 0.5s 3s linear both;
+
     .container2 {
       position: absolute;
       top: 0.5%;
