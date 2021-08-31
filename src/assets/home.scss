@@ -8,7 +8,13 @@ html {
   width: 100%;
   overflow: hidden;
   overflow-y: scroll;
+}
+body {
   &.loadwrap {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     overflow: hidden;
   }
 }
@@ -209,7 +215,7 @@ html {
     @include imgUrl(110px, 110px, 'audio.png');
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 150px;
     z-index: 100;
     &.play {
       animation: audioAni 3s linear infinite;

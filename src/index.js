@@ -27,9 +27,11 @@ import img21 from './assets/img/page3/train.png';
 import img22 from './assets/img/xian.png';
 import img23 from './assets/img/logo.png';
 import img27 from './assets/img/page1/bg1.jpg';
+import img28 from './assets/img/page8/l1.jpg';
+import img29 from './assets/img/page8/l2.jpg';
+import img30 from './assets/img/page8/l3.jpg';
 
 import '@assets/home.scss';
-
 
 AOS.init({
   offset: -50,
@@ -286,6 +288,9 @@ $(function () {
           img25,
           img26,
           img27,
+          img28,
+          img29,
+          img30,
         ],
         (percent) => {
           $('#process').html(percent > 0.9 ? 90 : parseInt(percent * 100));
@@ -300,7 +305,7 @@ $(function () {
             }, 5000);
             setTimeout(function () {
               $('#loading').hide();
-              $('body').removeClass('fadeOut');
+              $('body').removeClass('loadwrap');
             }, 5500);
             // }, 100);
 

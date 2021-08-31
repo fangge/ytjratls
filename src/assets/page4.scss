@@ -38,14 +38,14 @@
     position: absolute;
   }
   .title2 {
-    @include imgUrl(39px, 364px, '/page4/title2.png');
+    @include imgUrl(64px, 476px, '/page4/title2.png');
     position: absolute;
-    top: 50px;
-    left: 94px;
+    top: 455px;
+    left: 6%;
     .container2 {
       position: absolute;
-      left: -8px;
-      top: -8px;
+      left: 4px;
+      top: 4px;
     }
   }
   .page4-tab-cont {

@@ -67,7 +67,6 @@
     }
     .r-img {
       @include imgUrl(373px, 1036px, '/page7/2.jpg');
-      animation: slide1 0.2s 0.5s linear both;
     }
   }
   .tab-cont2 {
