@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import AOS from 'aos';
+// import AOS from 'aos';
 import img1 from './assets/img/page2/ani3.png';
 import img2 from './assets/img/page2/bg2.jpg';
 import img3 from './assets/img/page5/bg5intro2.jpg';
@@ -33,11 +33,13 @@ import img30 from './assets/img/page8/l3.jpg';
 
 import '@assets/home.scss';
 
-AOS.init({
-  offset: -50,
-});
+// AOS.init({
+//   offset: -50,
+// });
 
 $(function () {
+
+  
   // window.addEventListener(
   //   'orientationchange',
   //   function (event) {
@@ -226,16 +228,7 @@ $(function () {
       $(document).on('scroll', function () {
         const sTop = $(this).scrollTop();
         console.log('sTop: ', sTop);
-        if (sTop <= 800) {
-          if (sTop >= 300) {
-            _this.$xian.css({ height: '13.33333rem' });
-            // $('.page1 .ani2').addClass('in');
-            // $('.page1 .title2').addClass('in');
-          }
-          return;
-        } else {
-          if (sTop < 5870) _this.$xian.css('height', sTop - 245 + 'px');
-        }
+        _this.$xian.css('height', sTop - 245 + 'px');
         // else {
         //   _this.$xian.css('height', $(this).scrollTop() - 200 + 'px');
         //   const sTop2 = sTop + 500;
@@ -305,8 +298,8 @@ $(function () {
             setTimeout(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
-            }, 5500);
-            // }, 100);
+            // }, 5500);
+            }, 100);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {
