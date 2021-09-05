@@ -1,10 +1,10 @@
 .page1 {
-  height: 1500px;
+  height: 178+1138px;
   .page-bg {
     width: 451px;
     height: 1138px;
     background-image: url(../assets/img/page1/bg1.jpg);
-    top: 211px;
+    top: 178px;
     right: 42px;
   }
   .ani1 {
@@ -13,7 +13,7 @@
     top: 180px;
     left: 116px;
     z-index: 7;
-    transform: scale(.8)
+    transform: scale(0.8);
   }
   .ani2 {
     @include imgUrl(220px, 221px, '/page1/ani2.png');
@@ -26,7 +26,7 @@
     @include imgUrl(34px, 277px, '/page1/title1.png');
     position: absolute;
     bottom: 200px;
-    right: 507px;
+    left: 28.266667%;
     z-index: 7;
     animation: slide2 1.5s linear infinite;
   }
@@ -34,7 +34,7 @@
     @include imgUrl(34px, 281px, '/page1/title2.png');
     position: absolute;
     bottom: 200px;
-    right: 568px;
+    left: 21.33333%;
     z-index: 7;
     span {
       display: block;

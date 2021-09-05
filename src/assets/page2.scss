@@ -1,25 +1,43 @@
 .page2 {
-  height: 1630px;
+  height: 1790px;
 
   .page-bg {
-    width: 545px;
+    width: 544px;
     height: 1087px;
-    background-image: url(../assets/img/page2/bg2.jpg);
+    background-image: url(../assets/img/page2/bgwrap.png);
     bottom: 0;
     right: 95px;
+    .img {
+      @include imgUrl(479px, 997px, '/page2/bg2.jpg');
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -6.73333rem;
+      margin-left: -240px;
+    }
   }
   .ani1 {
     @include imgUrl(423px, 388px, '/page2/ani3.png');
     position: absolute;
-    top: 95px;
-    left: 18.4%;
+    top: 186px;
+    left: 19.7333333%;
     z-index: 7;
+  }
+  .ani3 {
+    @include imgUrl(53px, 214px, '/page2/xian.png');
+    background-size: 53px 214px;
+    background-position: top center;
+    position: absolute;
+    top: 463+186-164px;
+    left: 58.66667%;
+    height: 0;
+    transition: height 0.15s linear;
   }
   .ani2 {
     @include imgUrl(161px, 339px, '/page2/ani1.png');
     position: absolute;
-    top: 460px;
-    right: 11.333333%;
+    top: 612 + px;
+    left: 65.33333%;
     z-index: 7;
   }
 }

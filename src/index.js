@@ -38,8 +38,6 @@ import '@assets/home.scss';
 // });
 
 $(function () {
-
-  
   // window.addEventListener(
   //   'orientationchange',
   //   function (event) {
@@ -228,7 +226,19 @@ $(function () {
       $(document).on('scroll', function () {
         const sTop = $(this).scrollTop();
         console.log('sTop: ', sTop);
-        _this.$xian.css('height', sTop - 245 + 'px');
+        _this.$xian.css('height', sTop - 450 + 'px');
+        $('.page2 .ani3').css(
+          'height',
+          sTop > 1250 ? '2.85333rem' : sTop - 1129 + 'px'
+        );
+        const sTop2 = sTop + 400;
+        if (sTop2 >= _this.page3Top && sTop2 < (_this.page4Top+300)) {
+          $('.page3 .train').addClass('in');
+        } else {
+          if ($('.page3 .train').hasClass('in')) {
+            $('.page3 .train').removeClass('in');
+          }
+        }
         // else {
         //   _this.$xian.css('height', $(this).scrollTop() - 200 + 'px');
         //   const sTop2 = sTop + 500;
@@ -298,7 +308,7 @@ $(function () {
             setTimeout(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
-            // }, 5500);
+              // }, 5500);
             }, 100);
 
             clearInterval(this.timer1);

@@ -1,39 +1,26 @@
-body[data-aos-duration='4000'] [data-aos],
-  [data-aos][data-aos][data-aos-duration='4000'] {
-    transition-duration: 4000ms;
-  }
-body[data-aos-duration='6000'] [data-aos],
-  [data-aos][data-aos][data-aos-duration='6000'] {
-    transition-duration: 6000ms;
-  }
 .page3 {
-  height: 2260px;
+  height: 2100px;
 
   .page-bg {
     width: 486px;
     height: 1928px;
     background-image: url(../assets/img/page3/bg3.png);
-    top: 330px;
-    left: 25.33333%;
+    top: 128px;
+    left: 27.2%;
   }
   .train {
     @include imgUrl(112px, 1254px, '/page3/train.png');
     position: absolute;
-    top: 450px;
-    left: 18.2%;
+    top: 292px;
+    left: 19.73333%;
     z-index: 7;
-  }
-  [data-aos='train'] {
-    opacity: .8;
-    transform: translateY(0);
-    transition-property: transform, opacity;
-
-    &.aos-animate {
-      opacity: 1;
-      transform: translateY(520px);
+    transition: opacity 0.5s linear;
+    opacity: 0!important;
+    &.in {
+      opacity: 1!important;
     }
   }
-  
+
   .title2 {
     @include imgUrl(41px, 733px, '/page3/title2.png');
     position: absolute;

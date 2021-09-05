@@ -1,37 +1,37 @@
 .page4 {
-  height: 2020px;
+  height: 3020px;
 
   .ani1 {
     @include imgUrl(297px, 229px, '/page4/ani1.png');
     position: absolute;
-    left: 31.2%;
-    top: 20px;
+    left: 33%;
+    top: 0;
   }
   .car {
-    @include imgUrl(217px, 410px, '/page4/car.png');
+    @include imgUrl(191px, 360px, '/page4/car.png');
     position: absolute;
-    left: 23.3333%;
-    top: 315px;
+    left: 30.66667%;
+    top: 490px;
   }
   .map {
-    @include imgUrl(343px, 245px, '/page4/map.png');
+    @include imgUrl(575px, 481px, '/page4/map.png');
     position: absolute;
-    left: 18.13333%;
-    top: 870px;
+    left: 10.933333%;
+    top: 1070px;
 
     .star {
-      @include imgUrl(61px, 146px, '/page4/star.png');
+      @include imgUrl(74px, 247px, '/page4/star.png');
       position: absolute;
-      top: 20px;
-      left: 44px;
+      top: 117px;
+      left: 103px;
       animation: scaleFlash 1.2s linear infinite;
     }
   }
   .title {
-    @include imgUrl(148px, 630px, '/page4/title.png');
+    @include imgUrl(186px, 798px, '/page4/title.png');
     position: absolute;
-    top: 251px;
-    right: 83px;
+    top: 234px;
+    left: 69.3333%;
   }
   .dot {
     @include imgUrl(27px, 27px, '/page4/dot.png');
@@ -48,15 +48,20 @@
       top: 4px;
     }
   }
+  .tab-cont1 {
+    height: 1256px;
+    width: 563px;
+    right: 20.6667%;
+  }
   .page4-tab-cont {
-    height: 900px;
-    width: 570px;
-    position: relative;
-    margin-left: -20px;
     .tab-cont1,
     .tab-cont2,
     .tab-cont3 {
+      position: absolute;
+      top: 0;
+      z-index: 10;
       display: none;
+
       &.selected {
         display: block;
       }
@@ -67,8 +72,8 @@
     }
     .logo {
       position: absolute;
-      left: 239px;
-      top: 359px;
+      left: 313px;
+      top: 677px;
     }
     .dot-title {
       position: absolute;
@@ -76,71 +81,71 @@
     .tab-cont1 {
       // @include imgUrl(382+200px, 534+200px, '/page4/tab1cont.png');
       .dot1 {
-        top: 104px;
-        left: 207px;
+        top: 0;
+        left: 163px;
       }
       .dot2 {
-        top: 239px;
-        left: 272px;
+        top: 309px;
+        left: 235px;
       }
       .dot3 {
-        top: 446px;
-        left: 311px;
+        top: 578px;
+        left: 356px;
       }
       .dot4 {
-        top: 577px;
-        left: 202px;
+        top: 895px;
+        left: 276px;
       }
       .dot5 {
-        top: 900-200px;
-        left: 289px;
+        top: 993px;
+        left: 363px;
       }
       .dot6 {
-        top: 900-104px;
-        left: 180px;
+        top: 1089px;
+        left: 254px;
       }
       .dot7 {
-        top: 900-91px;
-        left: 264px;
+        top: 1103px;
+        left: 338px;
       }
       .dot-title1 {
         @include imgUrl(195px, 25px, '/page4/tab1/title(1).png');
-        top: 105px;
-        right: 124px;
+        top: 0;
+        left: 202px;
       }
       .dot-title2 {
         @include imgUrl(170px, 56px, '/page4/tab1/title(3).png');
-        top: 232px;
-        right: 58px;
+        top: 302px;
+        left: 306px;
       }
       .dot-title3 {
         @include imgUrl(147px, 25px, '/page4/tab1/title(4).png');
-        top: 447px;
-        right: 54px;
+        top: 579px;
+        left: 415px;
       }
       .dot-title4 {
         @include imgUrl(122px, 57px, '/page4/tab1/title(8).png');
-        top: 561px;
-        left: 54px;
+        top: 879px;
+        left: 128px;
       }
       .dot-title5 {
         @include imgUrl(146px, 56px, '/page4/tab1/title(6).png');
-        bottom: 151px;
-        right: 92px;
+        bottom: 227px;
+        right: 0;
       }
       .dot-title6 {
         @include imgUrl(146px, 55px, '/page4/tab1/title(5).png');
-        bottom: 88px;
-        left: 10px;
+        top: 1077px;
+        left: 84px;
       }
       .dot-title7 {
         @include imgUrl(147px, 23px, '/page4/tab1/title(2).png');
-        bottom: 62px;
-        right: 118px;
+        top: 1105px;
+        left: 380px;
       }
       .loc {
-        top: 278px;
-        left: 58px;
+        top: 596px;
+        left: 132px;
         animation: scaleFlash 1.2s linear infinite;
       }
       .logo {
@@ -349,17 +354,20 @@
   }
   .page4-tab {
     position: absolute;
+    width: 100%;
+    height: 1256px;
+    position: absolute;
     bottom: 0;
-    left: 2.66667%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    left: 0;
     nav {
       height: 775px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: absolute;
+      left: 4.53333%;
+      top: 265px;
+      z-index: 20;
       a {
         display: block;
         &.selected {
