@@ -7,13 +7,13 @@
     position: absolute;
     left: 197px;
     top: 0;
-    height: 0
+    height: 0;
   }
   .title {
     @include imgUrl(98px, 209px, '/page7/title.png');
     position: absolute;
     left: 76.53333%;
-    top: 50px;
+    top: 22%;
   }
 }
 .page7-tab-wrap {
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right:-50px;
+    margin-right: -50px;
     a {
       display: block;
       &.selected {
@@ -68,7 +68,14 @@
       display: block;
     }
   }
-
+  .l-img {
+    position: relative;
+    z-index: 12;
+  }
+  .r-img {
+    position: relative;
+    z-index: 11;
+  }
   .tab-cont1 {
     padding-left: 50px;
     .l-img {
@@ -80,7 +87,7 @@
     }
   }
   .tab-cont2 {
-    padding-left: 100px;
+    padding-left: 50px;
     .l-img {
       @include imgUrl(251px, 278px, '/page7/4.jpg');
       animation: flipInX 1s linear both, scaleFlash 5s 1s linear infinite;

@@ -24,7 +24,6 @@
       position: absolute;
       top: 117px;
       left: 103px;
-      animation: scaleFlash 1.2s linear infinite;
     }
   }
   .title {
@@ -80,7 +79,8 @@
       width: 563px;
       right: 20.6667%;
       .dot,
-      .dot-title {
+      .dot-title,
+      .loc {
         animation: zoomIn 0.4s linear both;
         display: none;
         &.in {
@@ -153,7 +153,7 @@
       .loc {
         top: 596px;
         left: 132px;
-        animation: scaleFlash 1.2s linear infinite;
+        animation: slide1 0.2s linear, scaleFlash 1.2s 0.2s linear infinite;
       }
       .logo {
         @include imgUrl(65px, 232px, '/page4/tab1/tab1logo.png');

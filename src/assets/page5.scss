@@ -1,44 +1,63 @@
 .page5 {
-  height: 2875px;
+  height: 2920px;
   .sub-title-wrap {
     position: absolute;
     left: 6%;
-    top: 964px;
+    top: 45%;
     .sub-title {
       margin-bottom: 162px;
+      display: none;
+      &.in {
+        display: block;
+      }
     }
   }
   .sub-title1 {
     @include imgUrl(24px, 193px, '/page5/bt1.png');
+    animation: slide1 0.5s linear both;
   }
   .sub-title2 {
     @include imgUrl(24px, 193px, '/page5/bt2.png');
+    animation: slide1 0.5s 0.5s linear both;
   }
   .sub-title3 {
     @include imgUrl(24px, 193px, '/page5/bt3.png');
+    animation: slide1 0.5s 1s linear both;
   }
   .sub-title4 {
     @include imgUrl(24px, 193px, '/page5/bt4.jpg');
+    animation: slide1 0.5s 1.5s linear both;
   }
   .page-bg {
     width: 400px;
     height: 2875px;
     background-image: url(../assets/img/page5/ani1.png);
-    left: 32%;
-    top: -5%;
+    left: 31%;
+    top: -4%;
     z-index: 9;
+    opacity: 0;
   }
   .ani2 {
     @include imgUrl(578px, 1201px, '/page5/ani2.png');
     position: absolute;
-    top: 44%;
+    top: 45%;
     left: 18%;
+    display: none;
+    animation: slide1 0.5s linear both;
+    &.in {
+      display: block;
+    }
   }
   .ani3 {
     @include imgUrl(219px, 1540px, '/page5/ani3.png');
     position: absolute;
     left: 16%;
     top: 31.6%;
+    display: none;
+    animation: slide1 0.5s 0.5s linear both;
+    &.in {
+      display: block;
+    }
   }
   .logo {
     @include imgUrl(116px, 523px, '/page5/logo.png');
@@ -62,7 +81,7 @@
     @include imgUrl(144px, 490px, '/page5/title2.png');
     position: absolute;
     left: 72%;
-    bottom: 50px;;
+    bottom: 50px;
     z-index: 99;
 
     .container2 {
@@ -134,6 +153,6 @@
   background-size: 369px 1427px;
   background-position: top center;
   position: absolute;
-  top: 50.9%;
+  top: 52%;
   left: 48%;
 }
