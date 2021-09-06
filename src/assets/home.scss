@@ -149,15 +149,15 @@ body {
   }
 }
 .xian {
-  width: 577px;
+  width: 314px;
   background-image: url(../assets/img/xian1.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 577px 12059px;
+  background-size: 314px 9033px;
   position: absolute;
   z-index: 9;
   top: 656px;
-  left: 19.466667%;
+  left: 19.3333%;
   overflow: hidden;
   height: 0;
   transition: height 0.15s linear;
@@ -165,6 +165,7 @@ body {
 .page-wrap {
   width: 100%;
   position: relative;
+  z-index: 10;
 }
 .page {
   width: 100%;

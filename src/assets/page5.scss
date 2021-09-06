@@ -1,37 +1,56 @@
 .page5 {
-  height: 2900px;
-
+  height: 2875px;
+  .sub-title-wrap {
+    position: absolute;
+    left: 6%;
+    top: 964px;
+    .sub-title {
+      margin-bottom: 162px;
+    }
+  }
+  .sub-title1 {
+    @include imgUrl(24px, 193px, '/page5/bt1.png');
+  }
+  .sub-title2 {
+    @include imgUrl(24px, 193px, '/page5/bt2.png');
+  }
+  .sub-title3 {
+    @include imgUrl(24px, 193px, '/page5/bt3.png');
+  }
+  .sub-title4 {
+    @include imgUrl(24px, 193px, '/page5/bt4.jpg');
+  }
   .page-bg {
     width: 400px;
     height: 2875px;
     background-image: url(../assets/img/page5/ani1.png);
-    left: 28.93333%;
-    top: -50px;
+    left: 32%;
+    top: -5%;
     z-index: 9;
   }
   .ani2 {
-    @include imgUrl(657px, 1267px, '/page5/ani2.png');
+    @include imgUrl(578px, 1201px, '/page5/ani2.png');
     position: absolute;
-    bottom: 300px;
-    left: 4%;
+    top: 44%;
+    left: 18%;
   }
   .ani3 {
     @include imgUrl(219px, 1540px, '/page5/ani3.png');
     position: absolute;
-    left: 12.8%;
-    bottom: 350px;
+    left: 16%;
+    top: 31.6%;
   }
   .logo {
     @include imgUrl(116px, 523px, '/page5/logo.png');
     position: absolute;
     top: 107px;
-    left: 66.66667%;
+    left: 71.66667%;
   }
   .title1 {
     @include imgUrl(64px, 400px, '/page5/title1.png');
     position: absolute;
     left: 8%;
-    top: 565px;
+    top: 450px;
     z-index: 99;
     .container2 {
       position: absolute;
@@ -42,8 +61,8 @@
   .title2 {
     @include imgUrl(144px, 490px, '/page5/title2.png');
     position: absolute;
-    left: 69.73333%;
-    bottom: 0;
+    left: 72%;
+    bottom: 50px;;
     z-index: 99;
 
     .container2 {
@@ -109,4 +128,12 @@
     left: auto;
     right: 50px;
   }
+}
+.page5-xian {
+  @include imgUrl(369px, 1427px, '/page5/xian.png');
+  background-size: 369px 1427px;
+  background-position: top center;
+  position: absolute;
+  top: 50.9%;
+  left: 48%;
 }

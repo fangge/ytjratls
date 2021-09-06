@@ -79,6 +79,14 @@
       height: 1256px;
       width: 563px;
       right: 20.6667%;
+      .dot,
+      .dot-title {
+        animation: zoomIn 0.4s linear both;
+        display: none;
+        &.in {
+          display: block;
+        }
+      }
       .dot1 {
         top: 0;
         left: 163px;
@@ -159,7 +167,7 @@
       .dot1 {
         top: 15px;
         left: 166px;
-        animation: zoomIn.4s linear both;
+        animation: zoomIn 0.4s linear both;
       }
       .dot2 {
         top: 302px;

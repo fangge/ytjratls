@@ -24,7 +24,7 @@ import img25 from './assets/img/page5/ani2.png';
 import img26 from './assets/img/page5/ani3.png';
 import img17 from './assets/img/page6/bg6.jpg';
 import img21 from './assets/img/page3/train.png';
-import img22 from './assets/img/xian.png';
+import img22 from './assets/img/xian1.png';
 import img23 from './assets/img/logo.png';
 import img27 from './assets/img/page1/bg1.jpg';
 import img28 from './assets/img/page8/l1.jpg';
@@ -64,14 +64,17 @@ $(function () {
   const actFun = {
     $xian: $('.xian'),
     timer1: null,
-    page2Top: $('.page2').offset().top,
     page3Top: $('.page3').offset().top,
     page4Top: $('.page4').offset().top,
     page5Top: $('.page5').offset().top,
     page6Top: $('.page6').offset().top,
-    page7Top: $('.page7').offset().top,
-    page8Top: $('.page8').offset().top,
-    page9Top: $('.page9').offset().top,
+    dot1Top: 4156,
+    dot2Top: 4311,
+    dot3Top: 4446,
+    dot4Top: 4605,
+    dot5Top: 4654,
+    dot6Top: 4702,
+    dot7Top: 4709,
     isArray(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
     },
@@ -231,33 +234,43 @@ $(function () {
           'height',
           sTop > 1250 ? '2.85333rem' : sTop - 1129 + 'px'
         );
+        $('.page5 .page5-xian').css(
+          'height',
+          sTop > 5700 ? '19.02667rem' : sTop - 5000 + 'px'
+        );
+        $('.page7 .page7-xian').css(
+          'height',
+          sTop > 6400 ? '4.42667rem' : sTop - 6200 + 'px'
+        );
         const sTop2 = sTop + 400;
-        if (sTop2 >= _this.page3Top && sTop2 < (_this.page4Top+300)) {
+        const sTop3 = sTop + 550;
+        if (sTop2 >= _this.page3Top && sTop2 < _this.page4Top + 300) {
           $('.page3 .train').addClass('in');
         } else {
           if ($('.page3 .train').hasClass('in')) {
             $('.page3 .train').removeClass('in');
           }
         }
-        // else {
-        //   _this.$xian.css('height', $(this).scrollTop() - 200 + 'px');
-        //   const sTop2 = sTop + 500;
-        //   if (sTop2 >= _this.page2Top && sTop2 < _this.page3Top) {
-        //     $('.page2').addClass('in');
-        //   } else if (sTop2 >= _this.page3Top && sTop2 < _this.page4Top) {
-        //     $('.page3').addClass('in');
-        //   } else if (sTop2 >= _this.page4Top && sTop2 < _this.page5Top) {
-        //     $('.page4').addClass('in');
-        //   } else if (sTop2 >= _this.page5Top && sTop2 < _this.page6Top) {
-        //     $('.page5').addClass('in');
-        //   } else if (sTop2 >= _this.page6Top && sTop2 < _this.page7Top) {
-        //     $('.page6').addClass('in');
-        //   } else if (sTop2 >= _this.page7Top && sTop2 < _this.page8Top) {
-        //     $('.page7').addClass('in');
-        //   } else if (sTop2 >= _this.page8Top && sTop2 < _this.page9Top) {
-        //     $('.page8').addClass('in');
-        //   }
-        // }
+
+        if (sTop3 >= _this.dot1Top && sTop3 < _this.dot2Top) {
+          $('.tab-cont1 .dot1,.tab-cont1 .dot-title1').addClass('in');
+        } else if (sTop3 >= _this.dot2Top && sTop3 < _this.dot3Top) {
+          $('.tab-cont1 .dot2,.tab-cont1 .dot-title2').addClass('in');
+        } else if (sTop3 >= _this.dot3Top && sTop3 < _this.dot4Top) {
+          $('.tab-cont1 .dot3,.tab-cont1 .dot-title3').addClass('in');
+        } else if (sTop3 >= _this.dot4Top && sTop3 < _this.dot5Top) {
+          $('.tab-cont1 .dot4,.tab-cont1 .dot-title4').addClass('in');
+        } else if (sTop3 >= _this.dot5Top && sTop3 < _this.dot6Top) {
+          $('.tab-cont1 .dot5,.tab-cont1 .dot-title5').addClass('in');
+        } else if (sTop3 >= _this.dot6Top && sTop3 < _this.dot7Top) {
+          $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').addClass('in');
+        } else if (sTop3 > _this.dot7Top) {
+          $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').addClass('in');
+        } else {
+          if ($('.tab-cont1 .dot,.tab-cont1 .dot-title').hasClass('in')) {
+            $('.tab-cont1 .dot,.tab-cont1 .dot-title').removeClass('in');
+          }
+        }
       });
     },
     init() {
@@ -308,8 +321,8 @@ $(function () {
             setTimeout(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
-              // }, 5500);
-            }, 100);
+            }, 5500);
+            // }, 100);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {

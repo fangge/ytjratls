@@ -1,11 +1,11 @@
 .page6 {
-  height: 1350px;
+  height: 1230px;
 
   .page-bg {
     width: 700px;
     height: 1226px;
     background-image: url(../assets/img/page6/bg6.jpg);
-    top: 126px ;
+    top: 0;
     left: 1.066667%;
     z-index: 9;
   }
@@ -71,7 +71,6 @@
   top: 0;
   left: 0;
   display: none;
-  animation: slide1 0.5s linear;
   z-index: 99;
   background: #f3f0e9;
   animation: slide1 0.5s linear;

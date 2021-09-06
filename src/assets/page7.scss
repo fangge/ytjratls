@@ -1,5 +1,14 @@
 .page7 {
-  height: 1350px;
+  height: 1550px;
+  .page7-xian {
+    @include imgUrl(71px, 332px, '/page7/xian.png');
+    background-size: 71px 332px;
+    background-position: top center;
+    position: absolute;
+    left: 197px;
+    top: 0;
+    height: 0
+  }
   .title {
     @include imgUrl(98px, 209px, '/page7/title.png');
     position: absolute;
@@ -9,8 +18,8 @@
 }
 .page7-tab-wrap {
   position: absolute;
-  top: 50px;
-  left: 4.66667%;
+  top: 312px;
+  left: 5%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -20,6 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right:-50px;
     a {
       display: block;
       &.selected {
@@ -58,38 +68,36 @@
       display: block;
     }
   }
-  .l-img {
-    margin-bottom: 10px;
-  }
 
   .tab-cont1 {
-    padding-left:50px;
+    padding-left: 50px;
     .l-img {
       @include imgUrl(251px, 278px, '/page7/1.jpg');
+      animation: scaleFlash 5s linear infinite;
     }
     .r-img {
-      @include imgUrl(373px, 1036px, '/page7/2.jpg');
+      @include imgUrl(373px, 1052px, '/page7/2.jpg');
     }
   }
   .tab-cont2 {
-    padding-left:100px;
+    padding-left: 100px;
     .l-img {
       @include imgUrl(251px, 278px, '/page7/4.jpg');
-      animation: flipInX 1s linear both;
+      animation: flipInX 1s linear both, scaleFlash 5s 1s linear infinite;
     }
     .r-img {
-      @include imgUrl(320px, 1046px, '/page7/5.jpg');
+      @include imgUrl(320px, 1074px, '/page7/5.jpg');
       animation: slide1 0.2s 0.5s linear both;
     }
   }
   .tab-cont3 {
-    padding-left:50px;
+    padding-left: 50px;
     .l-img {
       @include imgUrl(251px, 278px, '/page7/7.jpg');
-      animation: flipInX 1s linear both;
+      animation: flipInX 1s linear both, scaleFlash 5s 1s linear infinite;
     }
     .r-img {
-      @include imgUrl(365px, 1046px, '/page7/8.jpg');
+      @include imgUrl(365px, 1033px, '/page7/8.jpg');
       animation: slide1 0.2s 0.5s linear both;
     }
   }

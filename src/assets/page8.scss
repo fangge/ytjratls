@@ -13,14 +13,13 @@
     height: 2301px;
     background-image: url(../assets/img/page8/bg8.jpg);
     position: relative;
-    animation: slide1 0.5s linear both;
-    margin-top:-20px;
+    margin-top: -20px;
   }
   .people {
-    @include imgUrl(170px, 950px, '/page8/people.png');
+    @include imgUrl(240px, 1337px, '/page8/people.png');
     position: absolute;
-    left: 39px;
-    top: 237px;
+    left: 14%;
+    top: 13%;
   }
   ul {
     li {
@@ -31,19 +30,19 @@
     @include imgUrl(87px, 102px, '/page8/L1.png');
     top: 571px;
     left: 32px;
-
+    animation: scaleFlash 2s linear infinite;
   }
   .floor2 {
     @include imgUrl(80px, 97px, '/page8/L2.png');
     top: 815+100px;
     left: 102px;
-
+    animation: scaleFlash 2s 0.2s linear infinite;
   }
   .floor3 {
     @include imgUrl(92px, 107px, '/page8/L3.png');
     top: 1043+200px;
     left: 169px;
-
+    animation: scaleFlash 2s 0.4s linear infinite;
   }
   // .floor4 {
   //   @include imgUrl(83px, 107px, '/page8/L4.png');
