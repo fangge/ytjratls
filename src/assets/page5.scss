@@ -12,6 +12,13 @@
       }
     }
   }
+  .boat{
+    @include imgUrl(68px, 199px, '/page5/boat.png');
+    position: absolute;
+    z-index: 12;
+    left: 34.13333%;
+    top:19%
+  }
   .sub-title1 {
     @include imgUrl(24px, 193px, '/page5/bt1.png');
     animation: slide1 0.5s linear both;
