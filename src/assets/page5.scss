@@ -12,28 +12,28 @@
       }
     }
   }
-  .boat{
+  .boat {
     @include imgUrl(68px, 199px, '/page5/boat.png');
     position: absolute;
     z-index: 12;
     left: 34.13333%;
-    top:19%
+    top: 19%;
   }
   .sub-title1 {
     @include imgUrl(24px, 193px, '/page5/bt1.png');
-    animation: slide1 0.5s linear both;
+    animation: slide1 0.5s 0.7s linear both;
   }
   .sub-title2 {
     @include imgUrl(24px, 193px, '/page5/bt2.png');
-    animation: slide1 0.5s 0.5s linear both;
+    animation: slide1 0.5s 1.2s linear both;
   }
   .sub-title3 {
     @include imgUrl(24px, 193px, '/page5/bt3.png');
-    animation: slide1 0.5s 1s linear both;
+    animation: slide1 0.5s 1.7s linear both;
   }
   .sub-title4 {
     @include imgUrl(24px, 193px, '/page5/bt4.jpg');
-    animation: slide1 0.5s 1.5s linear both;
+    animation: slide1 0.5s 2.1s linear both;
   }
   .page-bg {
     width: 400px;
@@ -42,18 +42,12 @@
     left: 31%;
     top: -4%;
     z-index: 9;
-    opacity: 0;
   }
   .ani2 {
     @include imgUrl(578px, 1201px, '/page5/ani2.png');
     position: absolute;
-    top: 45%;
-    left: 18%;
-    display: none;
-    animation: slide1 0.5s linear both;
-    &.in {
-      display: block;
-    }
+    top: 44.3%;
+    left: 17%;
   }
   .ani3 {
     @include imgUrl(219px, 1540px, '/page5/ani3.png');
@@ -61,7 +55,7 @@
     left: 16%;
     top: 31.6%;
     display: none;
-    animation: slide1 0.5s 0.5s linear both;
+    animation: slide1 0.5s 0.2s linear both;
     &.in {
       display: block;
     }
@@ -160,6 +154,6 @@
   background-size: 369px 1427px;
   background-position: top center;
   position: absolute;
-  top: 52%;
+  top: 51%;
   left: 48%;
 }

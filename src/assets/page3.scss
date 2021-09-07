@@ -11,7 +11,7 @@
   .train {
     @include imgUrl(112px, 1254px, '/page3/train.png');
     position: absolute;
-    top: 292px;
+    top: 10px;
     left: 19.73333%;
     z-index: 7;
     transition: opacity 0.5s linear;

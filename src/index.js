@@ -242,9 +242,13 @@ $(function () {
           'height',
           sTop > 6400 ? '4.42667rem' : sTop - 6200 + 'px'
         );
+        $('.page8 .page8-xian').css(
+          'height',
+          sTop > 8200 ? '29.04rem' : sTop - 7200 + 'px'
+        );
         const sTop2 = sTop + 400;
         const sTop3 = sTop + 550;
-        if (sTop2 >= _this.page3Top && sTop2 < _this.page4Top + 300) {
+        if (sTop >= 1890 && sTop2 < _this.page4Top + 300) {
           $('.page3 .train').addClass('in');
         } else {
           if ($('.page3 .train').hasClass('in')) {
@@ -252,9 +256,9 @@ $(function () {
           }
         }
         if (sTop >= 4982) {
-          $('.page5 .ani2,.page5 .ani3,.page5 .sub-title').addClass('in');
+          $('.page5 .ani3,.page5 .sub-title').addClass('in');
         } else {
-          $('.page5 .ani2,.page5 .ani3,.page5 .sub-title').removeClass('in');
+          $('.page5 .ani3,.page5 .sub-title').removeClass('in');
         }
 
         if (sTop3 >= _this.dot1Top && sTop3 < _this.dot2Top) {

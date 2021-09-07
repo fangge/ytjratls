@@ -3,17 +3,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  .page8-xian {
+    background: url(../assets/img/page8/xian2.png) no-repeat top center;
+    background-size: 457px 2178px;
+    width: 457px;
+    height: 2178px;
+    position: absolute;
+    top: -1%;
+    left: 22.5%;
+    z-index: 10;
+    height: 0;
+  }
 
   .title {
     @include imgUrl(77px, 255px, '/page8/title.png');
-    margin-right: 50px;
+    margin-right: 150px;
   }
   .page-bg {
     width: 409px;
     height: 2301px;
     background-image: url(../assets/img/page8/bg8.jpg);
     position: relative;
-    margin-top: -20px;
+    top: -1.5%;
+    left: -13%;
   }
   .people {
     @include imgUrl(240px, 1337px, '/page8/people.png');
@@ -104,6 +116,7 @@
       }
     }
   }
+
   .intro {
     display: none;
     width: 667px;
