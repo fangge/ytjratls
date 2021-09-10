@@ -82,9 +82,18 @@
       animation: scaleFlash 5s linear infinite;
     }
     .r-img {
-      @include imgUrl(373px, 1052px, '/page7/2.jpg');
+      @include imgUrl(373px, 1052px, '/page7/2_2.jpg');
       margin-left: 50px;
       margin-top:-10px;
+      position: relative;
+      .hair{
+        @include imgUrl(182px, 1000px, '/page7/hair.png');
+        background-size: 182px 1000px;
+        background-position: top center;
+        position: absolute;
+        right: 5%;
+        top: 6%;
+      }
     }
   }
   .tab-cont2 {
