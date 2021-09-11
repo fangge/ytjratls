@@ -1,5 +1,5 @@
 .page5 {
-  height: 2920px;
+  height: 39.9rem;
   .sub-title-wrap {
     position: absolute;
     left: 6%;
@@ -46,7 +46,7 @@
   .ani2 {
     @include imgUrl(578px, 1201px, '/page5/ani2.png');
     position: absolute;
-    top: 44.3%;
+    top: 43.3%;
     left: 17%;
   }
   .ani3 {
@@ -67,28 +67,28 @@
     left: 71.66667%;
   }
   .title1 {
-    @include imgUrl(64px, 400px, '/page5/title1.png');
+    @include imgUrl(69px, 497px, '/page5/title1.png');
     position: absolute;
     left: 8%;
     top: 450px;
     z-index: 99;
     .container2 {
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 1%;
+      left: 12%;
     }
   }
   .title2 {
-    @include imgUrl(144px, 490px, '/page5/title2.png');
+    @include imgUrl(113px, 547px, '/page5/title2.png');
     position: absolute;
-    left: 72%;
-    bottom: 50px;
+    left: 83%;
+    bottom: 32%;
     z-index: 99;
 
     .container2 {
       position: absolute;
-      top: 0.5%;
-      left: 60%;
+      top: 1%;
+      left: 46%;
     }
   }
 }
@@ -154,6 +154,6 @@
   background-size: 369px 1427px;
   background-position: top center;
   position: absolute;
-  top: 51%;
+  top: 50%;
   left: 48%;
 }

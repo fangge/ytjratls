@@ -1,12 +1,12 @@
 .page6 {
-  height: 1230px;
+  height: 1490px;
 
   .page-bg {
-    width: 700px;
-    height: 1226px;
+    width: 588px;
+    height: 1031px;
     background-image: url(../assets/img/page6/bg6.jpg);
     top: 0;
-    left: 1.066667%;
+    left: 10.66667%;
     z-index: 9;
   }
   ul {
@@ -15,7 +15,7 @@
       animation: mymovetop 5s linear infinite;
       i {
         display: block;
-        @include imgUrl(20px, 37px, '/page6/arrow.png');
+        @include imgUrl(16px, 31px, '/page6/arrow.png');
         margin: 0 auto;
       }
       .pulse,
@@ -29,37 +29,37 @@
     }
   }
   .page6-btn1 {
-    top: 305-10px;
-    left: 390px;
+    top: 246px;
+    left: 325px;
   }
   .page6-btn2 {
-    top: 385-10px;
-    left: 480px;
+    top: 315px;
+    left: 407px;
   }
   .page6-btn3 {
-    top: 405-10px;
-    left: 275px;
+    top: 336px;
+    left: 234px;
   }
   .page6-btn4 {
-    top: 525-10px;
-    left: 295px;
+    top: 433px;
+    left: 251px;
   }
 
   .page6-btn5 {
-    top: 680-10px;
-    left: 485px;
+    top: 562px;
+    left: 411px;
   }
   .page6-btn6 {
-    top: 725-10px;
-    left: 550px;
+    top: 599px;
+    left: 465px;
   }
   .page6-btn7 {
-    top: 925-10px;
-    left: 540px;
+    top: 766px;
+    left: 455px;
   }
   .page6-btn8 {
-    top: 1075-10px;
-    left: 595px;
+    top: 894px;
+    left: 499px;
   }
 }
 .bg6-intro {

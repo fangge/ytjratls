@@ -1,14 +1,14 @@
 .page7 {
-  height: 1646px;
-  .page7-xian {
-    @include imgUrl(71px, 332px, '/page7/xian.png');
-    background-size: 71px 332px;
-    background-position: top center;
-    position: absolute;
-    left: 197px;
-    top: 0;
-    height: 0;
-  }
+  height: 1330px;
+  // .page7-xian {
+  //   @include imgUrl(71px, 332px, '/page7/xian.png');
+  //   background-size: 71px 332px;
+  //   background-position: top center;
+  //   position: absolute;
+  //   left: 197px;
+  //   top: 0;
+  //   height: 0;
+  // }
   .title {
     @include imgUrl(98px, 209px, '/page7/title.png');
     position: absolute;
@@ -18,7 +18,7 @@
 }
 .page7-tab-wrap {
   position: absolute;
-  top: 312px;
+  top: 0;
   left: 5%;
   display: flex;
   flex-wrap: nowrap;
@@ -78,44 +78,49 @@
   .tab-cont1 {
     padding-left: 50px;
     .l-img {
-      @include imgUrl(251px, 278px, '/page7/1.jpg');
+      @include imgUrl(251px, 278px, '/page7/1.png');
       animation: scaleFlash 5s linear infinite;
     }
     .r-img {
-      @include imgUrl(373px, 1052px, '/page7/2_2.jpg');
+      @include imgUrl(373px, 944px, '/page7/2.png');
       margin-left: 50px;
-      margin-top:-10px;
+      margin-top: -10px;
       position: relative;
-      .hair{
-        @include imgUrl(182px, 1000px, '/page7/hair.png');
-        background-size: 182px 1000px;
+      .hair {
+        @include imgUrl(141px, 1003px, '/page7/hair.png');
+        background-size: 141px 1003px;
         background-position: top center;
         position: absolute;
-        right: 5%;
-        top: 6%;
+        right: 18%;
+        top: 5%;
+        height: 0%;
       }
     }
   }
   .tab-cont2 {
     padding-left: 50px;
     .l-img {
-      @include imgUrl(251px, 278px, '/page7/4.jpg');
+      @include imgUrl(251px, 278px, '/page7/4.png');
       animation: flipInX 1s linear both, scaleFlash 5s 1s linear infinite;
     }
     .r-img {
-      @include imgUrl(320px, 1074px, '/page7/5.jpg');
+      @include imgUrl(320px, 1074px, '/page7/5.png');
       animation: slide1 0.2s 0.5s linear both;
+      position: relative;
+      right: -24.4%;
     }
   }
   .tab-cont3 {
     padding-left: 50px;
     .l-img {
-      @include imgUrl(251px, 278px, '/page7/7.jpg');
+      @include imgUrl(251px, 278px, '/page7/7.png');
       animation: flipInX 1s linear both, scaleFlash 5s 1s linear infinite;
     }
     .r-img {
-      @include imgUrl(365px, 1033px, '/page7/8.jpg');
+      @include imgUrl(365px, 1033px, '/page7/8.png');
       animation: slide1 0.2s 0.5s linear both;
+      position: relative;
+      right: -24.4%;
     }
   }
 }

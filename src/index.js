@@ -1,35 +1,35 @@
 import $ from 'jquery';
 // import AOS from 'aos';
 import img1 from './assets/img/page2/ani3.png';
-// import img2 from './assets/img/page2/bg2.jpg';
-// import img3 from './assets/img/page5/bg5intro2.jpg';
-// import img4 from './assets/img/page6/intro1.jpg';
-// import img5 from './assets/img/page6/intro2.jpg';
-// import img6 from './assets/img/page6/intro3.jpg';
-// import img7 from './assets/img/page6/intro4.jpg';
-// import img8 from './assets/img/page6/intro5.jpg';
-// import img9 from './assets/img/page6/intro6.jpg';
-// import img10 from './assets/img/page3/bg3intro.jpg';
-// import img11 from './assets/img/page5/bg5intro.jpg';
-// import img12 from './assets/img/page7/2.jpg';
-// import img13 from './assets/img/page7/5.jpg';
-// import img14 from './assets/img/page7/8.jpg';
-// import img18 from './assets/img/page7/1.jpg';
-// import img19 from './assets/img/page7/4.jpg';
-// import img20 from './assets/img/page7/7.jpg';
-// import img15 from './assets/img/page4/map.png';
-// import img16 from './assets/img/page5/title2.png';
-// import img24 from './assets/img/page5/ani1.png';
-// import img25 from './assets/img/page5/ani2.png';
-// import img26 from './assets/img/page5/ani3.png';
-// import img17 from './assets/img/page6/bg6.jpg';
-// import img21 from './assets/img/page3/train.png';
-// import img22 from './assets/img/xian1.png';
-// import img23 from './assets/img/logo.png';
-// import img27 from './assets/img/page1/bg1.jpg';
-// import img28 from './assets/img/page8/l1.jpg';
-// import img29 from './assets/img/page8/l2.jpg';
-// import img30 from './assets/img/page8/l3.jpg';
+import img2 from './assets/img/page2/bg2.jpg';
+import img3 from './assets/img/page5/bg5intro2.jpg';
+import img4 from './assets/img/page6/intro1.jpg';
+import img5 from './assets/img/page6/intro2.jpg';
+import img6 from './assets/img/page6/intro3.jpg';
+import img7 from './assets/img/page6/intro4.jpg';
+import img8 from './assets/img/page6/intro5.jpg';
+import img9 from './assets/img/page6/intro6.jpg';
+import img10 from './assets/img/page3/bg3intro.jpg';
+import img11 from './assets/img/page5/bg5intro.jpg';
+import img12 from './assets/img/page7/2.png';
+import img13 from './assets/img/page7/5.png';
+import img14 from './assets/img/page7/8.png';
+import img18 from './assets/img/page7/1.png';
+import img19 from './assets/img/page7/4.png';
+import img20 from './assets/img/page7/7.png';
+import img15 from './assets/img/page4/map.png';
+import img16 from './assets/img/page5/title2.png';
+import img24 from './assets/img/page5/ani1.png';
+import img25 from './assets/img/page5/ani2.png';
+import img26 from './assets/img/page5/ani3.png';
+import img17 from './assets/img/page6/bg6.jpg';
+import img21 from './assets/img/page3/train.png';
+import img22 from './assets/img/xian1.png';
+import img23 from './assets/img/logo.png';
+import img27 from './assets/img/page1/bg1.jpg';
+import img28 from './assets/img/page8/l1.jpg';
+import img29 from './assets/img/page8/l2.jpg';
+import img30 from './assets/img/page8/l3.jpg';
 
 import '@assets/home.scss';
 
@@ -68,13 +68,14 @@ $(function () {
     page4Top: $('.page4').offset().top,
     page5Top: $('.page5').offset().top,
     page6Top: $('.page6').offset().top,
-    dot1Top: 4156,
-    dot2Top: 4311,
-    dot3Top: 4446,
-    dot4Top: 4605,
-    dot5Top: 4654,
-    dot6Top: 4702,
-    dot7Top: 4709,
+    page7Top: $('.page7').offset().top,
+    dot1Top: 3660,
+    dot2Top: 3777,
+    dot3Top: 3865,
+    dot4Top: 4090,
+    dot5Top: 4118,
+    dot6Top: 4168,
+    dot7Top: 4178,
     isArray(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
     },
@@ -246,8 +247,14 @@ $(function () {
           'height',
           sTop > 8200 ? '29.04rem' : sTop - 7200 + 'px'
         );
+        if (sTop > 6750) {
+          $('.page7 .hair').css(
+            'height',
+            sTop > 7544 ? '13.37333rem' : sTop - 6700 + 'px'
+          );
+        }
+
         const sTop2 = sTop + 400;
-        const sTop3 = sTop + 550;
         if (sTop >= 1890 && sTop2 < _this.page4Top + 300) {
           $('.page3 .train').addClass('in');
         } else {
@@ -261,8 +268,9 @@ $(function () {
           $('.page5 .ani3,.page5 .sub-title').removeClass('in');
         }
 
-        if (sTop3 >= _this.dot1Top && sTop3 < _this.dot2Top) {
+        if (sTop >= _this.dot1Top && sTop < _this.dot2Top) {
           $('.tab-cont1 .dot1,.tab-cont1 .dot-title1').addClass('in');
+          $('.page4-tab nav').addClass('in');
           $('.tab-cont1 .dot2,.tab-cont1 .dot-title2').removeClass('in');
           $('.tab-cont1 .dot3,.tab-cont1 .dot-title3').removeClass('in');
           $('.tab-cont1 .dot4,.tab-cont1 .dot-title4').removeClass('in');
@@ -270,7 +278,7 @@ $(function () {
           $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').removeClass('in');
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
           $('.tab-cont1 .loc').removeClass('in');
-        } else if (sTop3 >= _this.dot2Top && sTop3 < _this.dot3Top) {
+        } else if (sTop >= _this.dot2Top && sTop < _this.dot3Top) {
           $('.tab-cont1 .dot2,.tab-cont1 .dot-title2').addClass('in');
           $('.tab-cont1 .dot3,.tab-cont1 .dot-title3').removeClass('in');
           $('.tab-cont1 .dot4,.tab-cont1 .dot-title4').removeClass('in');
@@ -278,28 +286,31 @@ $(function () {
           $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').removeClass('in');
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
           $('.tab-cont1 .loc').removeClass('in');
-        } else if (sTop3 >= _this.dot3Top && sTop3 < _this.dot4Top) {
+        } else if (sTop >= _this.dot3Top && sTop < _this.dot4Top) {
           $('.tab-cont1 .dot3,.tab-cont1 .dot-title3').addClass('in');
           $('.tab-cont1 .loc').addClass('in');
           $('.tab-cont1 .dot4,.tab-cont1 .dot-title4').removeClass('in');
           $('.tab-cont1 .dot5,.tab-cont1 .dot-title5').removeClass('in');
           $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').removeClass('in');
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
-        } else if (sTop3 >= _this.dot4Top && sTop3 < _this.dot5Top) {
+        } else if (sTop >= _this.dot4Top && sTop < _this.dot5Top) {
           $('.tab-cont1 .dot4,.tab-cont1 .dot-title4').addClass('in');
           $('.tab-cont1 .dot5,.tab-cont1 .dot-title5').removeClass('in');
           $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').removeClass('in');
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
-        } else if (sTop3 >= _this.dot5Top && sTop3 < _this.dot6Top) {
+        } else if (sTop >= _this.dot5Top && sTop < _this.dot6Top) {
           $('.tab-cont1 .dot5,.tab-cont1 .dot-title5').addClass('in');
           $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').removeClass('in');
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
-        } else if (sTop3 >= _this.dot6Top && sTop3 < _this.dot7Top) {
+        } else if (sTop >= _this.dot6Top && sTop < _this.dot7Top) {
           $('.tab-cont1 .dot6,.tab-cont1 .dot-title6').addClass('in');
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
-        } else if (sTop3 > _this.dot7Top) {
+        } else if (sTop > _this.dot7Top) {
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').addClass('in');
         } else {
+          if ($('.page4-tab nav').hasClass('in')) {
+            $('.page4-tab nav').removeClass('in');
+          }
           if (
             $('.tab-cont1 .dot,.tab-cont1 .dot-title,.tab-cont1 .loc').hasClass(
               'in'
@@ -316,35 +327,35 @@ $(function () {
       this.loader(
         [
           img1,
-          // img2,
-          // img3,
-          // img4,
-          // img5,
-          // img6,
-          // img7,
-          // img8,
-          // img9,
-          // img10,
-          // img11,
-          // img12,
-          // img13,
-          // img14,
-          // img15,
-          // img16,
-          // img17,
-          // img18,
-          // img19,
-          // img20,
-          // img21,
-          // img22,
-          // img23,
-          // img24,
-          // img25,
-          // img26,
-          // img27,
-          // img28,
-          // img29,
-          // img30,
+          img2,
+          img3,
+          img4,
+          img5,
+          img6,
+          img7,
+          img8,
+          img9,
+          img10,
+          img11,
+          img12,
+          img13,
+          img14,
+          img15,
+          img16,
+          img17,
+          img18,
+          img19,
+          img20,
+          img21,
+          img22,
+          img23,
+          img24,
+          img25,
+          img26,
+          img27,
+          img28,
+          img29,
+          img30,
         ],
         (percent) => {
           $('#process').html(percent > 0.9 ? 90 : parseInt(percent * 100));

@@ -3,7 +3,7 @@
 
 body,
 html {
-  background: #f3f0e9;
+  background: url(../assets/img/bg.jpg) repeat center center / 100px 100px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -67,8 +67,8 @@ body {
   align-items: center;
   justify-content: center;
   .logo {
-    width: 267px;
-    height: 550px;
+    width: 231px;
+    height: 650px;
     overflow: hidden;
     background: #000;
     margin: 0 auto;
@@ -203,11 +203,11 @@ body {
 @import './page2.scss';
 @import './page3.scss';
 @import './page4.scss';
-// @import './page5.scss';
-// @import './page6.scss';
-// @import './page7.scss';
-// @import './page8.scss';
-// @import './page9.scss';
+@import './page5.scss';
+@import './page6.scss';
+@import './page7.scss';
+@import './page8.scss';
+@import './page9.scss';
 
 .audio {
   .icon {

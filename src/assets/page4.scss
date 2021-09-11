@@ -37,17 +37,20 @@
     position: absolute;
   }
   .title2 {
-    @include imgUrl(64px, 476px, '/page4/title2.png');
+    @include imgUrl(74px, 642px, '/page4/title2.png');
     position: absolute;
     top: 455px;
     left: 6%;
     .container2 {
       position: absolute;
-      left: 4px;
-      top: 4px;
+      left: 17%;
+      top: 1.6%;
     }
   }
-
+  .tab-cont {
+    width: 100%;
+    left: 0;
+  }
   .page4-tab-cont {
     .tab-cont1,
     .tab-cont2,
@@ -67,17 +70,15 @@
     }
     .logo {
       position: absolute;
-      left: 313px;
-      top: 677px;
     }
     .dot-title {
       position: absolute;
     }
     .tab-cont1 {
       // @include imgUrl(382+200px, 534+200px, '/page4/tab1cont.png');
-      height: 1256px;
-      width: 563px;
-      right: 20.6667%;
+      height: 1060px;
+
+      top: 6%;
       .dot,
       .dot-title,
       .loc {
@@ -89,283 +90,285 @@
       }
       .dot1 {
         top: 0;
-        left: 163px;
+        left: 206px;
       }
       .dot2 {
-        top: 309px;
-        left: 235px;
+        top: 232px;
+        left: 268px;
       }
       .dot3 {
-        top: 578px;
-        left: 356px;
+        top: 417px;
+        left: 361px;
       }
       .dot4 {
-        top: 895px;
-        left: 276px;
+        top: 868px;
+        left: 306px;
       }
       .dot5 {
-        top: 993px;
-        left: 363px;
+        top: 917px;
+        left: 396px;
       }
       .dot6 {
-        top: 1089px;
-        left: 254px;
+        top: 1013px;
+        left: 287px;
       }
       .dot7 {
-        top: 1103px;
-        left: 338px;
+        top: 1027px;
+        left: 371px;
       }
       .dot-title1 {
         @include imgUrl(195px, 25px, '/page4/tab1/title(1).png');
         top: 0;
-        left: 202px;
+        left: 250px;
       }
       .dot-title2 {
         @include imgUrl(170px, 56px, '/page4/tab1/title(3).png');
-        top: 302px;
-        left: 306px;
+        top: 226px;
+        left: 339px;
       }
       .dot-title3 {
         @include imgUrl(147px, 25px, '/page4/tab1/title(4).png');
-        top: 579px;
-        left: 415px;
+        top: 418px;
+        left: 417px;
       }
       .dot-title4 {
         @include imgUrl(122px, 57px, '/page4/tab1/title(8).png');
-        top: 879px;
-        left: 128px;
+        top: 855px;
+        left: 163px;
       }
       .dot-title5 {
         @include imgUrl(146px, 56px, '/page4/tab1/title(6).png');
-        bottom: 227px;
-        right: 0;
+        top: 897px;
+        left: 450px;
       }
       .dot-title6 {
         @include imgUrl(146px, 55px, '/page4/tab1/title(5).png');
-        top: 1077px;
-        left: 84px;
+        top: 1001px;
+        left: 117px;
       }
       .dot-title7 {
         @include imgUrl(147px, 23px, '/page4/tab1/title(2).png');
-        top: 1105px;
-        left: 380px;
+        top: 1029px;
+        left: 413px;
       }
       .loc {
-        top: 596px;
-        left: 132px;
+        top: 445px;
+        left: 163px;
         animation: slide1 0.2s linear, scaleFlash 1.2s 0.2s linear infinite;
       }
       .logo {
         @include imgUrl(65px, 232px, '/page4/tab1/tab1logo.png');
+        left: 346px;
+        top: 601px;
       }
     }
     .tab-cont2 {
       // @include imgUrl(366+200px, 640+200px, '/page4/tab2cont.png');
       height: 1244px;
-      width: 584px;
-      right: 18%;
+      top: 2%;
       .dot1 {
         top: 15px;
-        left: 166px;
+        left: 199px;
         animation: zoomIn 0.4s linear both;
       }
       .dot2 {
-        top: 302px;
-        left: 236px;
+        top: 287px;
+        left: 269px;
         animation: zoomIn 0.4s 0.2s linear both;
       }
       .dot3 {
         top: 355px;
-        left: 229px;
+        left: 262px;
         animation: zoomIn 0.4s 0.4s linear both;
       }
       .dot4 {
         top: 552px;
-        left: 349px;
+        left: 382px;
         animation: zoomIn 0.4s 0.6s linear both;
       }
       .dot5 {
         top: 941px;
-        left: 369px;
+        left: 402px;
         animation: zoomIn 0.4s 0.8s linear both;
       }
       .dot6 {
-        top: 988px;
-        left: 266px;
+        top: 973px;
+        left: 299px;
         animation: zoomIn 0.4s 1s linear both;
       }
       .dot7 {
         top: 1106px;
-        left: 334px;
+        left: 367px;
         animation: zoomIn 0.4s 1.2s linear both;
       }
       .dot8 {
         top: 1204px;
-        left: 230px;
+        left: 263px;
         animation: zoomIn 0.4s 1.4s linear both;
       }
       .dot-title1 {
         @include imgUrl(179px, 56px, '/page4/tab2/title(6).png');
         top: 0;
-        left: 215px;
+        left: 245px;
         animation: zoomIn 0.4s linear both;
       }
       .dot-title2 {
         @include imgUrl(206px, 55px, '/page4/tab2/title(9).png');
         top: 287px;
-        left: 271px;
+        left: 304px;
         animation: zoomIn 0.4s 0.2s linear both;
       }
       .dot-title3 {
-        @include imgUrl(182px, 55px, '/page4/tab2/title(1).png');
-        top: 538px;
-        left: 393px;
+        @include imgUrl(128px, 25px, '/page4/tab2/title(4).png');
+
+        top: 372px;
+        left: 115px;
         animation: zoomIn 0.4s 0.4s linear both;
       }
       .dot-title4 {
-        @include imgUrl(128px, 25px, '/page4/tab2/title(4).png');
-        top: 372px;
-        left: 82px;
+        @include imgUrl(182px, 55px, '/page4/tab2/title(1).png');
+        top: 538px;
+        left: 426px;
 
         animation: zoomIn 0.4s 0.6s linear both;
       }
       .dot-title5 {
         @include imgUrl(152px, 56px, '/page4/tab2/title(5).png');
         top: 926px;
-        left: 410px;
+        left: 443px;
         animation: zoomIn 0.4s 0.8s linear both;
       }
       .dot-title6 {
         @include imgUrl(99px, 56px, '/page4/tab2/title(8).png');
         top: 973px;
-        left: 145px;
+        left: 178px;
         animation: zoomIn 0.4s 1s linear both;
       }
       .dot-title7 {
         @include imgUrl(204px, 56px, '/page4/tab2/title(3).png');
-        top: 1107px;
-        right: 0;
+        top: 1109px;
+        left: 413px;
         animation: zoomIn 0.4s 1.2s linear both;
       }
       .dot-title8 {
         @include imgUrl(100px, 25px, '/page4/tab2/title(2).png');
-        bottom: 14px;
-        left: 116px;
+        top: 1215px;
+        left: 149px;
         animation: zoomIn 0.4s 1.4s linear both;
       }
       .loc {
         top: 584px;
-        left: 132px;
+        left: 165px;
         animation: scaleFlash 1.2s linear infinite;
       }
       .logo {
         @include imgUrl(65px, 232px, '/page4/tab2/tab2logo.png');
+        left: 346px;
+        top: 665px;
       }
     }
     .tab-cont3 {
       // @include imgUrl(363+200px, 584+200px, '/page4/tab3cont.png');
       height: 1376px;
-      width: 583px;
-      right: 18%;
-      top: -11%;
+      top: -10%;  
       .dot1 {
-        top: 26px;
-        left: 160px;
+        top: 25px;
+        left: 193px;
         animation: zoomIn.4s linear both;
       }
       .dot2 {
-        top: 421px;
-        left: 229px;
+        top: 420px;
+        left: 262px;
         animation: zoomIn 0.4s 0.2s linear both;
       }
       .dot3 {
-        top: 556px;
-        left: 242px;
+        top: 555px;
+        left: 275px;
         animation: zoomIn 0.4s 0.4s linear both;
       }
       .dot4 {
-        top: 704px;
-        left: 359px;
+        top: 703px;
+        left: 392px;
         animation: zoomIn 0.4s 0.6s linear both;
       }
       .dot5 {
-        top: 1018px;
-        left: 377px;
+        top: 1017px;
+        left: 410px;
         animation: zoomIn 0.4s 0.8s linear both;
       }
       .dot6 {
-        top: 1045px;
-        left: 276px;
+        top: 1044px;
+        left: 309px;
         animation: zoomIn 0.4s 1s linear both;
       }
       .dot7 {
-        top: 1239px;
-        left: 250px;
+        top: 1238px;
+        left: 281px;
         animation: zoomIn 0.4s 1.2s linear both;
       }
       .dot8 {
-        top: 1376-98px;
-        left: 316px;
+        top: 1250px;
+        left: 369px;
         animation: zoomIn 0.4s 1.4s linear both;
       }
       .dot-title1 {
         @include imgUrl(166px, 55px, '/page4/tab3/title(1).png');
         top: 0;
-        left: 198px;
+        left: 230px;
         animation: zoomIn 0.4s linear both;
       }
       .dot-title2 {
         @include imgUrl(145px, 56px, '/page4/tab3/title(3).png');
-        top: 407px;
-        left: 270px;
+        top: 406px;
+        left: 303px;
         animation: zoomIn 0.4s 0.2s linear both;
       }
       .dot-title3 {
         @include imgUrl(128px, 56px, '/page4/tab3/title(6).png');
-        top: 685px;
-        left: 401px;
+        top: 540px;
+        left: 133px;
 
         animation: zoomIn 0.4s 0.4s linear both;
       }
       .dot-title4 {
         @include imgUrl(122px, 57px, '/page4/tab3/title(8).png');
-        top: 541px;
-        left: 100px;
+        top: 684px;
+        left: 434px;
         animation: zoomIn 0.4s 0.6s linear both;
       }
       .dot-title5 {
         @include imgUrl(168px, 55px, '/page4/tab3/title(7).png');
-        top: 998px;
-        right: 0;
+        top: 1001px;
+        left: 448px;
         animation: zoomIn 0.4s 0.8s linear both;
       }
       .dot-title6 {
         @include imgUrl(122px, 56px, '/page4/tab3/title(2).png');
-        top: 1028px;
-        left: 139px;
+        top: 1027px;
+        left: 172px;
         animation: zoomIn 0.4s 1s linear both;
       }
       .dot-title7 {
         @include imgUrl(145px, 55px, '/page4/tab3/title(4).png');
-        top: 1252px;
-        left: 381px;
+        top: 1223px;
+        left: 129px;
         animation: zoomIn 0.4s 1.2s linear both;
       }
       .dot-title8 {
         @include imgUrl(123px, 25px, '/page4/tab3/title(5).png');
-        top: 1224px;
-        left: 96px;
+        top: 1251px;
+        left: 414px;
         animation: zoomIn 0.4s 1.4s linear both;
       }
       .loc {
-        top: 716px;
-        left: 132px;
+        top: 715px;
+        left: 165px;
         animation: scaleFlash 1.2s linear infinite;
       }
       .logo {
         @include imgUrl(65px, 232px, '/page4/tab3/tab3logo.png');
-        left: 313px;
-        top: 797px;
+        left: 346px;
+        top: 796px;
       }
     }
   }
@@ -378,34 +381,45 @@
     left: 0;
     nav {
       height: 775px;
-      display: flex;
+
       flex-direction: column;
       justify-content: space-between;
       position: absolute;
       left: 4.53333%;
-      top: 265px;
+      top: 100px;
       z-index: 20;
+      display: none;
+      &.in {
+        display: flex;
+      }
       a {
         display: block;
         &.selected {
-          animation: scaleFlash 1.2s linear infinite;
         }
         &.page4-tab1 {
           @include imgUrl(89px, 122px, '/page4/tab1.png');
+          animation: zoomIn 0.5s linear both;
           &.selected {
             background-image: url(../assets/img/page4/tab1on.png);
+            animation: zoomIn 0.5s linear both, scaleFlash 1.2s linear infinite;
           }
         }
         &.page4-tab2 {
           @include imgUrl(83px, 122px, '/page4/tab2.png');
+          animation: zoomIn 0.5s 0.5s linear both;
           &.selected {
             background-image: url(../assets/img/page4/tab2on.png);
+            animation: zoomIn 0.5s 0.5s linear both,
+              scaleFlash 1.2s linear infinite;
           }
         }
         &.page4-tab3 {
           @include imgUrl(82px, 111px, '/page4/tab3.png');
+          animation: zoomIn 0.5s 1.5s linear both;
           &.selected {
             background-image: url(../assets/img/page4/tab3on.png);
+            animation: zoomIn 0.5s 1.5s linear both,
+              scaleFlash 1.2s linear infinite;
           }
         }
       }
