@@ -1,39 +1,39 @@
 .page1 {
-  height: 178+1138px;
+  height: 1296+47px;
   .page-bg {
-    width: 451px;
-    height: 1138px;
+    width: 460px;
+    height: 1296px;
     background-image: url(../assets/img/page1/bg1.jpg);
-    top: 178px;
-    right: 42px;
+    top: 47px;
+    left: 33.3333%;
   }
   .ani1 {
     @include imgUrl(250px, 445px, '/page1/ani1.png');
     position: absolute;
-    top: 180px;
-    left: 116px;
+    top: 180-178+47px;
+    left: 116/750*100%;
     z-index: 7;
     transform: scale(0.8);
   }
   .ani2 {
     @include imgUrl(220px, 221px, '/page1/ani2.png');
     position: absolute;
-    top: 579px;
+    top: 579-178+47px;
     left: 198px;
     z-index: 6;
   }
   .title1 {
-    @include imgUrl(34px, 277px, '/page1/title1.png');
+    @include imgUrl(30px, 481px, '/page1/title1.png');
     position: absolute;
-    bottom: 200px;
+    bottom: 50px;
     left: 28.266667%;
     z-index: 7;
     animation: slide2 1.5s linear infinite;
   }
   .title2 {
-    @include imgUrl(34px, 281px, '/page1/title2.png');
+    @include imgUrl(30px, 415px, '/page1/title2.png');
     position: absolute;
-    bottom: 200px;
+    bottom: 50px;
     left: 21.33333%;
     z-index: 7;
     span {

@@ -1,12 +1,12 @@
 .page2 {
-  height: 1790px;
+  height: 1087+677px;
 
   .page-bg {
     width: 544px;
     height: 1087px;
     background-image: url(../assets/img/page2/bgwrap.png);
-    bottom: 0;
-    right: 95px;
+    top: 677px;
+    left: 14%;
     .img {
       @include imgUrl(479px, 997px, '/page2/bg2.jpg');
       position: absolute;
@@ -19,7 +19,7 @@
   .ani1 {
     @include imgUrl(423px, 388px, '/page2/ani3.png');
     position: absolute;
-    top: 186px;
+    top: 157px;
     left: 19.7333333%;
     z-index: 7;
   }
@@ -28,7 +28,7 @@
     background-size: 53px 214px;
     background-position: top center;
     position: absolute;
-    top: 463+186-164px;
+    top: 463+157-164px;
     left: 58.66667%;
     height: 0;
     transition: height 0.15s linear;
@@ -36,7 +36,7 @@
   .ani2 {
     @include imgUrl(161px, 339px, '/page2/ani1.png');
     position: absolute;
-    top: 612 + px;
+    top: 612px;
     left: 65.33333%;
     z-index: 7;
   }

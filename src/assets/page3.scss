@@ -15,9 +15,9 @@
     left: 19.73333%;
     z-index: 7;
     transition: opacity 0.5s linear;
-    opacity: 0!important;
+    opacity: 0 !important;
     &.in {
-      opacity: 1!important;
+      opacity: 1 !important;
     }
   }
 
@@ -29,7 +29,7 @@
     z-index: 7;
   }
   .title3 {
-    @include imgUrl(64px, 469px, '/page3/title3.png');
+    @include imgUrl(69px, 564px, '/page3/title3.png');
     position: absolute;
     bottom: 500px;
     left: 4.8%;
@@ -46,8 +46,8 @@
     position: absolute;
     width: 44px;
     height: 44px;
-    left: 4px;
-    top: 4px;
+    left: 10%;
+    top: 1.6%;
   }
 }
 .bg3-intro {

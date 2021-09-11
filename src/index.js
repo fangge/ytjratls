@@ -1,35 +1,35 @@
 import $ from 'jquery';
 // import AOS from 'aos';
 import img1 from './assets/img/page2/ani3.png';
-import img2 from './assets/img/page2/bg2.jpg';
-import img3 from './assets/img/page5/bg5intro2.jpg';
-import img4 from './assets/img/page6/intro1.jpg';
-import img5 from './assets/img/page6/intro2.jpg';
-import img6 from './assets/img/page6/intro3.jpg';
-import img7 from './assets/img/page6/intro4.jpg';
-import img8 from './assets/img/page6/intro5.jpg';
-import img9 from './assets/img/page6/intro6.jpg';
-import img10 from './assets/img/page3/bg3intro.jpg';
-import img11 from './assets/img/page5/bg5intro.jpg';
-import img12 from './assets/img/page7/2.jpg';
-import img13 from './assets/img/page7/5.jpg';
-import img14 from './assets/img/page7/8.jpg';
-import img18 from './assets/img/page7/1.jpg';
-import img19 from './assets/img/page7/4.jpg';
-import img20 from './assets/img/page7/7.jpg';
-import img15 from './assets/img/page4/map.png';
-import img16 from './assets/img/page5/title2.png';
-import img24 from './assets/img/page5/ani1.png';
-import img25 from './assets/img/page5/ani2.png';
-import img26 from './assets/img/page5/ani3.png';
-import img17 from './assets/img/page6/bg6.jpg';
-import img21 from './assets/img/page3/train.png';
-import img22 from './assets/img/xian1.png';
-import img23 from './assets/img/logo.png';
-import img27 from './assets/img/page1/bg1.jpg';
-import img28 from './assets/img/page8/l1.jpg';
-import img29 from './assets/img/page8/l2.jpg';
-import img30 from './assets/img/page8/l3.jpg';
+// import img2 from './assets/img/page2/bg2.jpg';
+// import img3 from './assets/img/page5/bg5intro2.jpg';
+// import img4 from './assets/img/page6/intro1.jpg';
+// import img5 from './assets/img/page6/intro2.jpg';
+// import img6 from './assets/img/page6/intro3.jpg';
+// import img7 from './assets/img/page6/intro4.jpg';
+// import img8 from './assets/img/page6/intro5.jpg';
+// import img9 from './assets/img/page6/intro6.jpg';
+// import img10 from './assets/img/page3/bg3intro.jpg';
+// import img11 from './assets/img/page5/bg5intro.jpg';
+// import img12 from './assets/img/page7/2.jpg';
+// import img13 from './assets/img/page7/5.jpg';
+// import img14 from './assets/img/page7/8.jpg';
+// import img18 from './assets/img/page7/1.jpg';
+// import img19 from './assets/img/page7/4.jpg';
+// import img20 from './assets/img/page7/7.jpg';
+// import img15 from './assets/img/page4/map.png';
+// import img16 from './assets/img/page5/title2.png';
+// import img24 from './assets/img/page5/ani1.png';
+// import img25 from './assets/img/page5/ani2.png';
+// import img26 from './assets/img/page5/ani3.png';
+// import img17 from './assets/img/page6/bg6.jpg';
+// import img21 from './assets/img/page3/train.png';
+// import img22 from './assets/img/xian1.png';
+// import img23 from './assets/img/logo.png';
+// import img27 from './assets/img/page1/bg1.jpg';
+// import img28 from './assets/img/page8/l1.jpg';
+// import img29 from './assets/img/page8/l2.jpg';
+// import img30 from './assets/img/page8/l3.jpg';
 
 import '@assets/home.scss';
 
@@ -316,35 +316,35 @@ $(function () {
       this.loader(
         [
           img1,
-          img2,
-          img3,
-          img4,
-          img5,
-          img6,
-          img7,
-          img8,
-          img9,
-          img10,
-          img11,
-          img12,
-          img13,
-          img14,
-          img15,
-          img16,
-          img17,
-          img18,
-          img19,
-          img20,
-          img21,
-          img22,
-          img23,
-          img24,
-          img25,
-          img26,
-          img27,
-          img28,
-          img29,
-          img30,
+          // img2,
+          // img3,
+          // img4,
+          // img5,
+          // img6,
+          // img7,
+          // img8,
+          // img9,
+          // img10,
+          // img11,
+          // img12,
+          // img13,
+          // img14,
+          // img15,
+          // img16,
+          // img17,
+          // img18,
+          // img19,
+          // img20,
+          // img21,
+          // img22,
+          // img23,
+          // img24,
+          // img25,
+          // img26,
+          // img27,
+          // img28,
+          // img29,
+          // img30,
         ],
         (percent) => {
           $('#process').html(percent > 0.9 ? 90 : parseInt(percent * 100));
