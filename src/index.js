@@ -371,8 +371,8 @@ $(function () {
             setTimeout(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
-              // }, 5500);
-            }, 100);
+              }, 5500);
+            // }, 100);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {
