@@ -229,7 +229,7 @@ $(function () {
       const _this = this;
       $(document).on('scroll', function () {
         const sTop = $(this).scrollTop();
-        console.log('sTop: ', sTop);
+        // console.log('sTop: ', sTop);
         _this.$xian.css('height', sTop - 450 + 'px');
         $('.page2 .ani3').css(
           'height',

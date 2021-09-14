@@ -21,7 +21,8 @@ body {
 @mixin imgUrl($w, $h, $img) {
   width: $w;
   height: $h;
-  background: url('../assets/img/#{$img}') no-repeat center center / 100% 100%;
+  background: url('../assets/img/#{$img}') no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .loading {
