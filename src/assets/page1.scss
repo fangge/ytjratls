@@ -10,7 +10,7 @@
   .ani1 {
     @include imgUrl(250px, 445px, '/page1/ani1.png');
     position: absolute;
-    top: 180-178+47px;
+    top: 172px;
     left: 116/750*100%;
     z-index: 7;
     transform: scale(0.8);
@@ -18,7 +18,7 @@
   .ani2 {
     @include imgUrl(220px, 221px, '/page1/ani2.png');
     position: absolute;
-    top: 579-178+47px;
+    top: 556px;
     left: 198px;
     z-index: 6;
   }
