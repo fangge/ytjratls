@@ -241,12 +241,12 @@ $(function () {
         );
         $('.page8 .page8-xian').css(
           'height',
-          sTop > 8200 ? '29.04rem' : sTop - 7200 + 'px'
+          sTop > 14000 ? '29.04rem' : sTop - 7200 + 'px'
         );
         if (sTop > 6850) {
           $('.page7 .hair').css(
             'height',
-            sTop > 7544 ? '13.37333rem' : sTop - 6550 + 'px'
+            sTop > 7000 ? '13.37333rem' : sTop - 6550 + 'px'
           );
         }
 

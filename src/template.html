@@ -29,12 +29,26 @@
   <body class="loadwrap">
     <div class="audio">
       <i class="icon play" id="music-icon"></i>
-      <audio autoplay="autoplay" id="music">
+      <audio autoplay="autoplay" id="music" preload="auto" loop="loop">
         <source
           src="https://diy-assets.msstatic.com/mrfangge/bg.mp3?20210916"
           type="audio/mpeg"
         />
       </audio>
+      <script type="text/javascript">
+        function audioAutoPlay(id) {
+          var audio = document.getElementById(id);
+          audio.play();
+          document.addEventListener(
+            'WeixinJSBridgeReady',
+            function () {
+              audio.play();
+            },
+            false
+          );
+        }
+        audioAutoPlay('music');
+      </script>
     </div>
     <div class="loading" id="loading">
       <div class="loading-wrap">
@@ -667,8 +681,8 @@
       src="https://diy-assets.msstatic.com/mrfangge/jquery.dll.js?20210916"
     ></script>
     <script
-    src="https://diy-assets.msstatic.com/mrfangge/jquery.scrollme.min.js"
-    type="text/javascript"
-  ></script>
+      src="https://diy-assets.msstatic.com/mrfangge/jquery.scrollme.min.js"
+      type="text/javascript"
+    ></script>
   </body>
 </html>
