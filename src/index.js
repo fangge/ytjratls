@@ -63,6 +63,8 @@ $(function () {
     page3Top: 3107,
     page4Top: 5185,
     page5Top: 8246,
+    xian5: $('.page5-xian').offset().top - window.innerHeight,
+    xian8: $('.page8-xian').offset().top - window.innerHeight,
     page6Top: 11265,
     page7Top: 12670,
     dot1Top: 3660 - 100,
@@ -223,30 +225,40 @@ $(function () {
     },
     scrollPage() {
       const _this = this;
+      console.log('_this.xian5: ', _this.xian5);
       $(document).on('scroll', function () {
         const sTop = $(this).scrollTop();
-        // console.log('sTop: ', sTop);
+        console.log('sTop: ', sTop);
         _this.$xian.css('height', sTop - 350 + 'px');
         $('.page2 .ani3').css(
           'height',
           sTop > 1250 ? '2.85333rem' : sTop - 1129 + 'px'
         );
-        $('.page5 .page5-xian').css(
-          'height',
-          sTop > 5700 ? '19.02667rem' : sTop - 5000 + 'px'
-        );
+        if (sTop > _this.xian5) {
+          $('.page5 .page5-xian').css(
+            'height',
+            sTop > _this.xian5 + 1427
+              ? '19.02667rem'
+              : sTop - _this.xian5 - 50 + 'px'
+          );
+        }
+
         $('.page7 .page7-xian').css(
           'height',
           sTop > 6400 ? '4.42667rem' : sTop - 6200 + 'px'
         );
-        $('.page8 .page8-xian').css(
-          'height',
-          sTop > 14000 ? '29.04rem' : sTop - 7200 + 'px'
-        );
-        if (sTop > 6850) {
+        if (sTop > _this.xian8) {
+          $('.page8 .page8-xian').css(
+            'height',
+            sTop > _this.xian8 + 2178
+              ? '29.04rem'
+              : sTop - _this.xian8 - 50 + 'px'
+          );
+        }
+        if (sTop > 7280) {
           $('.page7 .hair').css(
             'height',
-            sTop > 7000 ? '13.37333rem' : sTop - 6550 + 'px'
+            sTop > 7900 ? '13.37333rem' : sTop - 7280 + 'px'
           );
         }
 

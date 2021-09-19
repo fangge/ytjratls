@@ -20,7 +20,7 @@ module.exports = merge(commonConfig, {
   devServer: {
     hot: true,
     contentBase: path.resolve(__dirname, '../dist'),
-    host: 'localhost', // 可以使用手机访问
+    host: '192.168.0.115', // 可以使用手机访问
     port: 1024,
     historyApiFallback: true, //  该选项的作用所有的404都连接到index.html
   },
