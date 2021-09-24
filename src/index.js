@@ -65,6 +65,7 @@ $(function () {
     page5Top: 8246,
     xian5: $('.page5-xian').offset().top - window.innerHeight,
     xian8: $('.page8-xian').offset().top - window.innerHeight,
+    hair: $('.tab-cont1 .r-img').offset().top - window.innerHeight,
     page6Top: 11265,
     page7Top: 12670,
     dot1Top: 3660 - 100,
@@ -255,10 +256,10 @@ $(function () {
               : sTop - _this.xian8 - 50 + 'px'
           );
         }
-        if (sTop > 7280) {
+        if (sTop > _this.hair) {
           $('.page7 .hair').css(
             'height',
-            sTop > 7900 ? '13.37333rem' : sTop - 7280 + 'px'
+            sTop > _this.hair + 944 ? '13.37333rem' : sTop - _this.hair - 50 + 'px'
           );
         }
 
