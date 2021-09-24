@@ -270,7 +270,7 @@
     .tab-cont3 {
       // @include imgUrl(363+200px, 584+200px, '/page4/tab3cont.png');
       height: 1376px;
-      top: -10%;  
+      top: -10%;
       .dot1 {
         top: 25px;
         left: 193px;
@@ -409,7 +409,7 @@
           animation: zoomIn 0.5s 0.5s linear both;
           &.selected {
             background-image: url(../assets/img/page4/tab2on.png);
-            animation: zoomIn 0.5s 0.5s linear both,
+            animation: zoomIn 0.5s 0.2s linear both,
               scaleFlash 1.2s linear infinite;
           }
         }
@@ -418,7 +418,7 @@
           animation: zoomIn 0.5s 1.5s linear both;
           &.selected {
             background-image: url(../assets/img/page4/tab3on.png);
-            animation: zoomIn 0.5s 1.5s linear both,
+            animation: zoomIn 0.5s 0.4s linear both,
               scaleFlash 1.2s linear infinite;
           }
         }

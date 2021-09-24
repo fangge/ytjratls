@@ -383,7 +383,7 @@ $(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
               // }, 5500);
-            }, 100);
+            }, 10);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {
