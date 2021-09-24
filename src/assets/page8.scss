@@ -46,14 +46,14 @@
   }
   .floor2 {
     @include imgUrl(80px, 97px, '/page8/L2.png');
-    top: 815+100px;
-    left: 102px;
+    top: 815+200px;
+    left: 102+50px;
     animation: scaleFlash 2s 0.2s linear infinite;
   }
   .floor3 {
     @include imgUrl(92px, 107px, '/page8/L3.png');
-    top: 1043+200px;
-    left: 169px;
+    top: 1043+450px;
+    left: 169+50px;
     animation: scaleFlash 2s 0.4s linear infinite;
   }
   // .floor4 {

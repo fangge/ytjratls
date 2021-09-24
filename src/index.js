@@ -198,7 +198,7 @@ $(function () {
       });
 
       $('.page1 .btn1').on('click', function () {
-        _this.scrollTop(_this.page6Top, 500);
+        _this.scrollTop(_this.page6Top-50, 500);
       });
       $('.page1 .btn2').on('click', function () {
         _this.scrollTop(_this.page7Top, 500);
@@ -369,7 +369,7 @@ $(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
             // }, 5500);
-            }, 100);
+            }, 10);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {
