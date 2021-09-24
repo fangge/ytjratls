@@ -33,7 +33,6 @@ import img30 from './assets/img/page8/l3.jpg';
 
 import '@assets/home.scss';
 
-
 $(function () {
   // window.addEventListener(
   //   'orientationchange',
@@ -61,18 +60,21 @@ $(function () {
   const actFun = {
     $xian: $('.xian'),
     timer1: null,
-    page3Top: $('.page3').offset().top,
-    page4Top: $('.page4').offset().top,
-    page5Top: $('.page5').offset().top,
-    page6Top: $('.page6').offset().top,
-    page7Top: $('.page7').offset().top,
-    dot1Top: 3660-100,
-    dot2Top: 3777-100,
-    dot3Top: 3865-100,
-    dot4Top: 4090-100,
-    dot5Top: 4118-100,
-    dot6Top: 4168-100,
-    dot7Top: 4178-100,
+    page3Top: 3107,
+    page4Top: 5185,
+    page5Top: 8246,
+    xian5: $('.page5-xian').offset().top - window.innerHeight,
+    xian8: $('.page8-xian').offset().top - window.innerHeight,
+    hair: $('.tab-cont1 .r-img').offset().top - window.innerHeight,
+    page6Top: 11265,
+    page7Top: 12670,
+    dot1Top: 3660 - 100,
+    dot2Top: 3777 - 100,
+    dot3Top: 3865 - 100,
+    dot4Top: 4090 - 100,
+    dot5Top: 4118 - 100,
+    dot6Top: 4168 - 100,
+    dot7Top: 4178 - 100,
     isArray(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
     },
@@ -198,7 +200,7 @@ $(function () {
       });
 
       $('.page1 .btn1').on('click', function () {
-        _this.scrollTop(_this.page6Top-50, 500);
+        _this.scrollTop(_this.page6Top - 50, 500);
       });
       $('.page1 .btn2').on('click', function () {
         _this.scrollTop(_this.page7Top, 500);
@@ -224,30 +226,42 @@ $(function () {
     },
     scrollPage() {
       const _this = this;
+      console.log('_this.xian5: ', _this.xian5);
       $(document).on('scroll', function () {
         const sTop = $(this).scrollTop();
-        // console.log('sTop: ', sTop);
+        console.log('sTop: ', sTop);
         _this.$xian.css('height', sTop - 350 + 'px');
         $('.page2 .ani3').css(
           'height',
           sTop > 1250 ? '2.85333rem' : sTop - 1129 + 'px'
         );
-        $('.page5 .page5-xian').css(
-          'height',
-          sTop > 5700 ? '19.02667rem' : sTop - 5000 + 'px'
-        );
+        if (sTop > _this.xian5) {
+          $('.page5 .page5-xian').css(
+            'height',
+            sTop > _this.xian5 + 1427
+              ? '19.02667rem'
+              : sTop - _this.xian5 - 50 + 'px'
+          );
+        }
+
         $('.page7 .page7-xian').css(
           'height',
           sTop > 6400 ? '4.42667rem' : sTop - 6200 + 'px'
         );
-        $('.page8 .page8-xian').css(
-          'height',
-          sTop > 8200 ? '29.04rem' : sTop - 7200 + 'px'
-        );
-        if (sTop > 6850) {
+        if (sTop > _this.xian8) {
+          $('.page8 .page8-xian').css(
+            'height',
+            sTop > _this.xian8 + 2178
+              ? '29.04rem'
+              : sTop - _this.xian8 - 50 + 'px'
+          );
+        }
+        if (sTop > _this.hair) {
           $('.page7 .hair').css(
             'height',
-            sTop > 7544 ? '13.37333rem' : sTop - 6550 + 'px'
+            sTop > _this.hair + 944
+              ? '13.37333rem'
+              : sTop - _this.hair - 50 + 'px'
           );
         }
 
@@ -368,8 +382,8 @@ $(function () {
             setTimeout(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
-            // }, 5500);
-            }, 10);
+              // }, 5500);
+            }, 100);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {
