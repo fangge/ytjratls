@@ -1,5 +1,3 @@
-import $ from 'jquery';
-// import AOS from 'aos';
 import img1 from './assets/img/page2/ani3.png';
 import img2 from './assets/img/page2/bg2.jpg';
 import img3 from './assets/img/page5/bg5intro2.jpg';
@@ -30,6 +28,8 @@ import img27 from './assets/img/page1/bg1.jpg';
 import img28 from './assets/img/page8/l1.jpg';
 import img29 from './assets/img/page8/l2.jpg';
 import img30 from './assets/img/page8/l3.jpg';
+import scrollme from './assets/jquyer.scrollme';
+
 
 import '@assets/home.scss';
 
@@ -226,10 +226,10 @@ $(function () {
     },
     scrollPage() {
       const _this = this;
-      console.log('_this.xian5: ', _this.xian5);
+
       $(document).on('scroll', function () {
         const sTop = $(this).scrollTop();
-        console.log('sTop: ', sTop);
+        // console.log('sTop: ', sTop);
         _this.$xian.css('height', sTop - 350 + 'px');
         $('.page2 .ani3').css(
           'height',
@@ -382,8 +382,9 @@ $(function () {
             setTimeout(function () {
               $('#loading').hide();
               $('body').removeClass('loadwrap');
+              scrollme.init();
               // }, 5500);
-            }, 10);
+            }, 100);
 
             clearInterval(this.timer1);
             this.timer1 = setInterval(function () {
