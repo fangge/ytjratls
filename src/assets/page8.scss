@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 12;
   .page8-xian {
     background: url(../assets/img/page8/xian2.png) no-repeat top center;
     background-size: 457px 2178px;
@@ -13,11 +14,14 @@
     left: 22.5%;
     z-index: 10;
     height: 0;
+    
   }
 
   .title {
     @include imgUrl(77px, 255px, '/page8/title.png');
     margin-right: 150px;
+    position: relative;
+    z-index: 13;
   }
   .page-bg {
     width: 409px;
@@ -36,24 +40,25 @@
   ul {
     li {
       position: absolute;
+      z-index: 12;
     }
   }
   .floor1 {
     @include imgUrl(87px, 102px, '/page8/L1.png');
     top: 571px;
-    left: 32px;
+    left: 32+200px;
     animation: scaleFlash 2s linear infinite;
   }
   .floor2 {
     @include imgUrl(80px, 97px, '/page8/L2.png');
     top: 815+200px;
-    left: 102+50px;
+    left: 102+200+50px;
     animation: scaleFlash 2s 0.2s linear infinite;
   }
   .floor3 {
     @include imgUrl(92px, 107px, '/page8/L3.png');
     top: 1043+450px;
-    left: 169+50px;
+    left: 169+200+50px;
     animation: scaleFlash 2s 0.4s linear infinite;
   }
   // .floor4 {
@@ -83,7 +88,7 @@
     z-index: 11;
     left: 50%;
     top: 50%;
-    transform: translate(-397%, -286%);
+    transform: translate(-397%, -14%);
 
     a {
       display: block;

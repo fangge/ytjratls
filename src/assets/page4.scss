@@ -272,8 +272,8 @@
       height: 1376px;
       top: -10%;
       .dot1 {
-        top: 25px;
-        left: 193px;
+        top: 25+140px;
+        left: 193+10px;
         animation: zoomIn.4s linear both;
       }
       .dot2 {
@@ -313,8 +313,8 @@
       }
       .dot-title1 {
         @include imgUrl(166px, 55px, '/page4/tab3/title(1).png');
-        top: 0;
-        left: 230px;
+        top: 0+140px;
+        left: 230+10px;
         animation: zoomIn 0.4s linear both;
       }
       .dot-title2 {

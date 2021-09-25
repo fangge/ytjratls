@@ -30,7 +30,6 @@ import img29 from './assets/img/page8/l2.jpg';
 import img30 from './assets/img/page8/l3.jpg';
 import scrollme from './assets/jquyer.scrollme';
 
-
 import '@assets/home.scss';
 
 $(function () {
@@ -177,6 +176,9 @@ $(function () {
             .addClass('show');
         }
       });
+      $('.page8 .title').on('click', function () {
+        _this.scrollTop(0, 500);
+      });
       $('.bg8-intro .close').on('click', function () {
         $('.bg8-intro').removeClass('show');
         $('.bg8-intro .intro').removeClass('show');
@@ -200,7 +202,7 @@ $(function () {
       });
 
       $('.page1 .btn1').on('click', function () {
-        _this.scrollTop(_this.page6Top-50, 500);
+        _this.scrollTop(_this.page6Top - 50, 500);
       });
       $('.page1 .btn2').on('click', function () {
         _this.scrollTop(_this.page7Top, 500);
@@ -318,20 +320,7 @@ $(function () {
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
         } else if (sTop > _this.dot7Top) {
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').addClass('in');
-        } else {
-          if ($('.page4-tab nav').hasClass('in')) {
-            $('.page4-tab nav').removeClass('in');
-          }
-          if (
-            $('.tab-cont1 .dot,.tab-cont1 .dot-title,.tab-cont1 .loc').hasClass(
-              'in'
-            )
-          ) {
-            $(
-              '.tab-cont1 .dot,.tab-cont1 .dot-title,.tab-cont1 .loc'
-            ).removeClass('in');
-          }
-        }
+        } 
       });
     },
     init() {
