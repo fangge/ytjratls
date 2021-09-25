@@ -60,14 +60,14 @@ $(function () {
   const actFun = {
     $xian: $('.xian'),
     timer1: null,
-    page3Top: 3107,
-    page4Top: 5185,
-    page5Top: 8246,
+    // page3Top: $('.page3').offset().top - window.innerHeight,
+    page4Top: $('.page4').offset().top,
+    // page5Top: $('.page5').offset().top - window.innerHeight,
     xian5: $('.page5-xian').offset().top - window.innerHeight,
     xian8: $('.page8-xian').offset().top - window.innerHeight,
     hair: $('.tab-cont1 .r-img').offset().top - window.innerHeight,
-    page6Top: 11265,
-    page7Top: 12670,
+    page6Top: $('.page6').offset().top,
+    page7Top: $('.page7').offset().top,
     dot1Top: 3660 - 100,
     dot2Top: 3777 - 100,
     dot3Top: 3865 - 100,
@@ -200,7 +200,7 @@ $(function () {
       });
 
       $('.page1 .btn1').on('click', function () {
-        _this.scrollTop(_this.page6Top - 50, 500);
+        _this.scrollTop(_this.page6Top-50, 500);
       });
       $('.page1 .btn2').on('click', function () {
         _this.scrollTop(_this.page7Top, 500);

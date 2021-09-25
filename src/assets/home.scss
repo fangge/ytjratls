@@ -21,7 +21,7 @@ body {
   width: $w;
   height: $h;
   background: url('../assets/img/#{$img}') no-repeat;
-  background-size: 100% 100%;
+  background-size:$w $h;
 }
 
 .loading {
