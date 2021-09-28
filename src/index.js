@@ -72,8 +72,8 @@ $(function () {
     dot3Top: 3865 - 100,
     dot4Top: 4090 - 100,
     dot5Top: 4118 - 100,
-    dot6Top: 4168 - 100,
-    dot7Top: 4178 - 100,
+    dot6Top: 4168 - 120,
+    dot7Top: 4178 - 120,
     isArray(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
     },

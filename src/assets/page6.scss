@@ -81,27 +81,35 @@
 
   .intro1 {
     @include imgUrl(750px, 1679px, '/page6/intro1.jpg');
+    background-size: 100% 100%;
   }
   .intro2 {
     @include imgUrl(750px, 1679px, '/page6/intro2.jpg');
+    background-size: 100% 100%;
   }
   .intro3 {
     @include imgUrl(750px, 1679px, '/page6/intro3.jpg');
+    background-size: 100% 100%;
   }
   .intro4 {
     @include imgUrl(750px, 1679px, '/page6/intro4.jpg');
+    background-size: 100% 100%;
   }
   .intro5 {
     @include imgUrl(750px, 1679px, '/page6/intro5.jpg');
+    background-size: 100% 100%;
   }
   .intro6 {
     @include imgUrl(750px, 1679px, '/page6/intro6.jpg');
+    background-size: 100% 100%;
   }
   .intro7 {
     @include imgUrl(750px, 1679px, '/page6/intro7.jpg');
+    background-size: 100% 100%;
   }
   .intro8 {
     @include imgUrl(750px, 1679px, '/page6/intro8.jpg');
+    background-size: 100% 100%;
   }
   .intro {
     display: none;
