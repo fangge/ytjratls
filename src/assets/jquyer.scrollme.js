@@ -85,7 +85,6 @@
 
 
     // Load all elements to animate
-    console.log('fuck')
     _this.init_elements();
 
     // Get element & viewport sizes
