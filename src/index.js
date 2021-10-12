@@ -59,7 +59,7 @@ $(function () {
   const actFun = {
     $xian: $('.xian'),
     timer1: null,
-    // page3Top: $('.page3').offset().top - window.innerHeight,
+    page2Top: $('.page2').offset().top+300,
     page4Top: $('.page4').offset().top,
     // page5Top: $('.page5').offset().top - window.innerHeight,
     xian5: $('.page5-xian').offset().top - window.innerHeight,
@@ -177,7 +177,7 @@ $(function () {
         }
       });
       $('.page8 .title').on('click', function () {
-        _this.scrollTop(0, 500);
+        _this.scrollTop(_this.page2Top, 500);
       });
       $('.bg8-intro .close').on('click', function () {
         $('.bg8-intro').removeClass('show');
