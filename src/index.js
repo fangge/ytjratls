@@ -25,9 +25,9 @@ import img21 from './assets/img/page3/train.png';
 import img22 from './assets/img/xian1.png';
 import img23 from './assets/img/logo.png';
 import img27 from './assets/img/page1/bg1.jpg';
-import img28 from './assets/img/page8/l1.jpg';
-import img29 from './assets/img/page8/l2.jpg';
-import img30 from './assets/img/page8/l3.jpg';
+import img28 from './assets/img/page8/l1p.png';
+import img29 from './assets/img/page8/l2p.png';
+import img30 from './assets/img/page8/l3p.png';
 import scrollme from './assets/jquyer.scrollme';
 
 import '@assets/home.scss';

@@ -124,29 +124,27 @@
 
   .intro {
     display: none;
-    width: 667px;
-    height: 1381px;
     height: 95vh;
     width: calc(95vh * 750 / 1679);
     position: relative;
     z-index: 10;
     .close {
-      left: 10px;
+      left: 0px;
     }
     &.show {
       display: block;
     }
   }
   .intro1 {
-    background: url(../assets/img/page8/l1.jpg) no-repeat center center / 100%
+    background: url(../assets/img/page8/l1p.png) no-repeat center center / 100%
       100%;
   }
   .intro2 {
-    background: url(../assets/img/page8/l2.jpg) no-repeat center center / 100%
+    background: url(../assets/img/page8/l2p.png) no-repeat center center / 100%
       100%;
   }
   .intro3 {
-    background: url(../assets/img/page8/l3.jpg) no-repeat center center / 100%
+    background: url(../assets/img/page8/l3p.png) no-repeat center center / 100%
       100%;
   }
 }
