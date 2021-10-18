@@ -59,7 +59,7 @@ $(function () {
   const actFun = {
     $xian: $('.xian'),
     timer1: null,
-    page2Top: $('.page2').offset().top+300,
+    page2Top: $('.page2').offset().top + 300,
     page4Top: $('.page4').offset().top,
     // page5Top: $('.page5').offset().top - window.innerHeight,
     xian5: $('.page5-xian').offset().top - window.innerHeight,
@@ -74,6 +74,7 @@ $(function () {
     dot5Top: 4118 - 100,
     dot6Top: 4168 - 120,
     dot7Top: 4178 - 120,
+    imgslide: null,
     isArray(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
     },
@@ -233,6 +234,15 @@ $(function () {
         const sTop = $(this).scrollTop();
         // console.log('sTop: ', sTop);
         _this.$xian.css('height', sTop - 350 + 'px');
+
+        if (sTop >= _this.page2Top && _this.imgslide == null) {
+          let index = 0;
+          _this.imgslide = setInterval(function () {
+            index == 1 ? (index = 0) : index++;
+            $('.page2 .banner').stop().fadeOut(400);
+            $('.page2 .banner'+index).stop().fadeIn(400);
+          }, 5000);
+        }
         $('.page2 .ani3').css(
           'height',
           sTop > 1250 ? '2.85333rem' : sTop - 1129 + 'px'
@@ -320,7 +330,7 @@ $(function () {
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').removeClass('in');
         } else if (sTop > _this.dot7Top) {
           $('.tab-cont1 .dot7,.tab-cont1 .dot-title7').addClass('in');
-        } 
+        }
       });
     },
     init() {

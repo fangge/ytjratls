@@ -8,12 +8,23 @@
     top: 677px;
     left: 14%;
     .img {
-      @include imgUrl(479px, 997px, '/page2/bg2.jpg');
       position: absolute;
       left: 50%;
       top: 50%;
       margin-top: -6.73333rem;
       margin-left: -240px;
+      .banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .banner0 {
+        @include imgUrl(479px, 997px, '/page2/bg2.jpg');
+      }
+      .banner1 {
+        @include imgUrl(479px, 997px, '/page2/bg2_1.jpg');
+        display: none
+      }
     }
   }
   .ani1 {
