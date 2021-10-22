@@ -59,7 +59,7 @@ $(function () {
   const actFun = {
     $xian: $('.xian'),
     timer1: null,
-    page2Top: $('.page2').offset().top + 300,
+    page2Top: $('.page2').offset().top + 200,
     page4Top: $('.page4').offset().top,
     // page5Top: $('.page5').offset().top - window.innerHeight,
     xian5: $('.page5-xian').offset().top - window.innerHeight,
@@ -237,10 +237,20 @@ $(function () {
 
         if (sTop >= _this.page2Top && _this.imgslide == null) {
           let index = 0;
+          setTimeout(function () {
+            index == 1 ? (index = 0) : index++;
+            $('.page2 .banner').stop().fadeOut(400);
+            $('.page2 .banner' + index)
+              .stop()
+              .fadeIn(400);
+          }, 500);
+
           _this.imgslide = setInterval(function () {
             index == 1 ? (index = 0) : index++;
             $('.page2 .banner').stop().fadeOut(400);
-            $('.page2 .banner'+index).stop().fadeIn(400);
+            $('.page2 .banner' + index)
+              .stop()
+              .fadeIn(400);
           }, 5000);
         }
         $('.page2 .ani3').css(
