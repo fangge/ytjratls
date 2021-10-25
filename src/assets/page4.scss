@@ -125,12 +125,12 @@
       .dot-title2 {
         @include imgUrl(150px, 51px, '/page4/tab1/title2.png');
         top: 226px;
-        left: 339px;
+        left: 300px;
       }
       .dot-title3 {
-        @include imgUrl(150px, 49px, '/page4/tab1/title3.png');
+        @include imgUrl(97px, 25px, '/page4/tab1/title3.png');
         top: 418px;
-        left: 417px;
+        left: 400px;
       }
       .dot-title4 {
         @include imgUrl(173px, 51px, '/page4/tab1/title4.png');
@@ -143,8 +143,8 @@
         left: 440px;
       }
       .dot-title6 {
-        @include imgUrl(151px, 52px, '/page4/tab1/title6.png');
-        top: 1001px;
+        @include imgUrl(149px, 23px, '/page4/tab1/title6.png');
+        top: 1010px;
         left: 117px;
       }
       .dot-title7 {

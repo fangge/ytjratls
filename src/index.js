@@ -255,7 +255,7 @@ $(function () {
             $('.page2 .banner' + index)
               .stop()
               .fadeIn(400);
-          }, 5000);
+          }, 3000);
         }
         $('.page2 .ani3').css(
           'height',
