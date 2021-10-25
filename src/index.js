@@ -172,9 +172,13 @@ $(function () {
           const index = $(this).index();
           $('.bg8-intro').addClass('show');
           $('.bg8-intro .intro').removeClass('show');
+          $('.bg8-intro nav a').removeClass('selected');
           $('.bg8-intro')
             .find('.intro' + (index + 1))
             .addClass('show');
+          $('.bg8-intro')
+            .find('.tab' + (index + 1))
+            .addClass('selected');
         }
       });
       $('.page8 .title').on('click', function () {
